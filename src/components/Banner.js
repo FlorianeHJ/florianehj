@@ -19,7 +19,7 @@ const Banner = () => {
         {/* {text} */}
         <div className='flex-1 text-center font-secondary lg:text-left'>
         <motion.h1 
-          variants={fadeIn('up', 0.4)} 
+          variants={fadeIn('up', 0.3)} 
           initial="hidden" 
           whileInView={"show"} 
           viewport={{ once: false, amount: 0.7 }} 
@@ -28,7 +28,7 @@ const Banner = () => {
           Floriane <span>HJ</span>
         </motion.h1>
         <motion.div 
-        variants={fadeIn('up', 0.3)} 
+        variants={fadeIn('up', 0.4)} 
         initial="hidden" 
         whileInView={"show"} 
         viewport={{ once: false, amount: 0.7 }}  
@@ -48,12 +48,30 @@ const Banner = () => {
             repeat={Infinity} 
         />
         </motion.div>
-        <p className='mb-8 max-w-lg mx-auto lg:mx-0'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse illum, repellendus odit explicabo temporibus fugiat rerum pariatur doloribus itaque eveniet? Quasi ex, sapiente recusandae tenetur iure provident eligendi qui blanditiis.</p>
-        <div className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
+        <motion.p 
+          variants={fadeIn('up', 0.5)} 
+          initial="hidden" 
+          whileInView={"show"} 
+          viewport={{ once: false, amount: 0.7 }} 
+          className='mb-8 max-w-lg mx-auto lg:mx-0'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse illum, repellendus odit explicabo temporibus fugiat rerum pariatur doloribus itaque eveniet? Quasi ex, sapiente recusandae tenetur iure provident eligendi qui blanditiis.
+        </motion.p>
+        <motion.div 
+          variants={fadeIn('up', 0.6)} 
+          initial="hidden" 
+          whileInView={"show"} 
+          viewport={{ once: false, amount: 0.7 }} 
+          className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
         <button className='btn btn-lg'>Contact me</button>
         <a href="#" className='text-gradient btn-link'>My portfolio</a>
+        </motion.div>
+
           {/* {scoials} */}
-          <div className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
+          <motion.div 
+            variants={fadeIn('up', 0.7)} 
+            initial="hidden" 
+            whileInView={"show"} 
+            viewport={{ once: false, amount: 0.7 }} 
+            className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
           <a href="#">
             <FaYoutube />
           </a>
@@ -63,13 +81,17 @@ const Banner = () => {
           <a href="#">
             <FaDribbble />
           </a>
-        </div>
-        </div>
+        
+        </motion.div>
         </div>
         {/* {image} */}
-        <div className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
+        <motion.div 
+          variants={fadeIn('down', 0.5)} 
+          initial="hidden" 
+          whileInView={"show"}         
+          className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
         <img className='w-[280px] h-[500px] rounded-full' src={Image} alt="" />
-        </div>
+        </motion.div>
       </div>
     </div>
   </section>)
