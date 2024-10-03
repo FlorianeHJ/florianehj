@@ -3,10 +3,14 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 import { fadeIn } from '../variants'
+import Header from './Header'
+import Nav from './Nav'
 
 const Contact = () => {
     return (
         <section id="contact" className="py-16 lg:section">
+            <Nav />
+            <Header />
             <div className="container mx-auto">
                 <div className="flex flex-col lg:flex-row">
                     {/* {text} */}

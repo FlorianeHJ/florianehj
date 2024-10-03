@@ -1,24 +1,25 @@
 import React from 'react'
 // components
-import Banner from './components/Banner'
-import Header from './components/Header'
-import Nav from './components/Nav'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import About from './components/About'
+import Contact from './components/Contact'
+import Home from './components/Home'
 import Services from './components/Services'
 import Work from './components/Work'
-import Contact from './components/Contact'
 
 const App = () => {
     return (
-        <div className="bg-site bg-no-repeat bg-cover overflow-hidden">
-            <Header />
-            <Banner />
-            <Nav />
-            <About />
-            <Services />
-            <Work />
-            <Contact />
-            {/* <div className='h-[4000px]'></div> */}
+        <div className="bg-background">
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" Component={Home} />
+                    <Route path="/about" Component={About} />
+                    <Route path="/work" Component={Work} />
+                    <Route path="/services" Component={Services} />
+                    <Route path="/contact" Component={Contact} />
+                </Routes>
+            </BrowserRouter>
+            <div className="h-screen"></div>
         </div>
     )
 }
