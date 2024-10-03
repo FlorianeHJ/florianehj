@@ -23,9 +23,9 @@ const Work = () => {
                     </div>
                     <div className="flex flex-row gap-7">
                         {/* {Card 1} */}
-                        <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-                            {/* {overlay} */}
-                            <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+                        <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl w-50">
+                            {/* {hover fondu} */}
+                            <div className="group-hover:bg-primary/70 w-full h-full absolute z-40 transition-all duration-300"></div>
                             {/* {images} */}
                             <img
                                 className="group-hover:scale-125 transition-all duration-500"

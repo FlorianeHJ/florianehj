@@ -5,12 +5,12 @@ import Logo from '../assets/logo.png'
 const Header = () => {
     return (
         <header>
-            <div className="section py-5 mx-auto">
-                <div className="flex justify-between items-center ">
+            <div className="section py-5 ml-auto mr-20">
+                <div className="flex gap-5 justify-between items-center ">
                     <a href="/">
                         <img className="w-[80px] h-[75px]" src={Logo} alt="" />
                     </a>
-                    <p className="text-base text-center italic px-10 py-2 bg-primary/20 backdrop-blur-2xl  h-[60px] rounded-full max-w-[900px] mx-auto">
+                    <p className="text-base text-center italic px-5 py-2 bg-primary/20 backdrop-blur-2xl  h-[60px] rounded-full max-w-[900px]">
                         "De cheffe de cuisine à chef de code, je suis passée des
                         fourneaux aux frameworks, avec toujours la même passion
                         pour les créations sur mesure !"
