@@ -15,10 +15,12 @@ const About = () => {
             <Nav />
             <Header />
             <section id="about" className="section mx-auto py-8">
-                <h2 className="h2 text-accent">A propos</h2>
-                <div className="flex flex-row gap-12">
+                <h2 className="h2 text-accent text-center text-4xl">
+                    A propos
+                </h2>
+                <div className="flex flex-row gap-12 py-3">
                     <div>
-                        <h3 className="h3 mb-4 text-center">
+                        <h3 className="h3 mb-4 text-center text-2xl">
                             Partir d'une expertise hôtelière...
                         </h3>
                         <p className="mb-6 text-justify">
@@ -43,7 +45,7 @@ const About = () => {
                         </p>
                     </div>
                     <div>
-                        <h3 className="h3 mb-4 text-center">
+                        <h3 className="h3 mb-4 text-center text-2xl">
                             ... pour exceller en développement web front-end.
                         </h3>
                         <p className="mb-6 text-justify">
@@ -76,7 +78,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="flex gap-x-8 items-center">
-                    <button className="btn btn-lg">Contact me</button>
+                    <button className="btn btn-lg">Contactez moi</button>
                 </div>
             </section>
         </div>

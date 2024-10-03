@@ -1,46 +1,28 @@
 import React from 'react'
-
-import { motion } from 'framer-motion'
-
-import { fadeIn } from '../variants'
-
 import Img1 from '../assets/portfolio-img1.png'
 import Img2 from '../assets/portfolio-img2.png'
 import Img3 from '../assets/portfolio-img3.png'
-import Nav from './Nav'
 import Header from './Header'
+import Nav from './Nav'
 
 const Work = () => {
     return (
-        <section id="work" className="section">
+        <div>
             <Nav />
             <Header />
-            <div className="container mx-auto">
-                <div className="flex flex-col lg:flex-row gap-x-10">
-                    <motion.div
-                        variants={fadeIn('right', 0.3)}
-                        initial="hidden"
-                        whileInView={'show'}
-                        viewport={{ once: false, amount: 0.3 }}
-                        className=" flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0"
-                    >
-                        {/* {text} */}
-                        <div>
-                            <h2 className="h2 leading-tight text-accent">
-                                My latest <br /> Work
-                            </h2>
-                            <p className="max-w-sm">
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Fuga tempora omnis vitae alias
-                                labore nam repudiandae assumenda modi facere
-                                aspernatur quae incidunt veniam, necessitatibus
-                                aut est velit ducimus aliquam sunt.
-                            </p>
-                            <button className="btn btn-sm">
-                                View all projects
-                            </button>
-                        </div>
-                        {/* {image} */}
+            <section id="work" className="section mx-auto ">
+                <div className="flex flex-col py-8">
+                    {/* {text} */}
+                    <div>
+                        <h2 className="h2 text-accent text-center">
+                            Mes projets <br />
+                            <span className="text-sm italic lowercase ">
+                                les plus récents
+                            </span>
+                        </h2>
+                    </div>
+                    <div className="flex flex-row gap-7">
+                        {/* {Card 1} */}
                         <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
                             {/* {overlay} */}
                             <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
@@ -63,15 +45,7 @@ const Work = () => {
                                 </span>
                             </div>
                         </div>
-                    </motion.div>
-                    <motion.div
-                        variants={fadeIn('left', 0.2)}
-                        initial="hidden"
-                        whileInView={'show'}
-                        viewport={{ once: false, amount: 0.3 }}
-                        className="flex-1 flex flex-col gap-y-10"
-                    >
-                        {/* {CARD} */}
+                        {/* {Card 2} */}
                         <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
                             {/* {overlay} */}
                             <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
@@ -94,7 +68,7 @@ const Work = () => {
                                 </span>
                             </div>
                         </div>
-                        {/* {CARD} */}
+                        {/* {Card 3} */}
                         <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
                             {/* {overlay} */}
                             <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
@@ -117,10 +91,13 @@ const Work = () => {
                                 </span>
                             </div>
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
-            </div>
-        </section>
+                <button className="btn btn-sm py-3">
+                    Voir tous mes projets
+                </button>
+            </section>
+        </div>
     )
 }
 
