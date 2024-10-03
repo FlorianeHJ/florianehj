@@ -1,15 +1,8 @@
 import React from 'react'
-
-import { useInView } from 'react-intersection-observer'
-
-import Header from './Header'
-import Nav from './Nav'
+import Header from '../components/Header'
+import Nav from '../components/Nav'
 
 const About = () => {
-    const [ref, inView] = useInView({
-        threshold: 0.5,
-    })
-
     return (
         <div>
             <Nav />

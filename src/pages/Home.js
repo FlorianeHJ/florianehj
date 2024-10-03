@@ -4,8 +4,8 @@ import Image from '../assets/profil2.png'
 
 import { TypeAnimation } from 'react-type-animation'
 
-import Header from './Header'
-import Nav from './Nav'
+import Header from '../components/Header'
+import Nav from '../components/Nav'
 
 const Banner = () => {
     return (

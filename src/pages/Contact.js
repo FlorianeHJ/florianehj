@@ -3,8 +3,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 import { fadeIn } from '../variants'
-import Header from './Header'
-import Nav from './Nav'
+import Header from '../components/Header'
+import Nav from '../components/Nav'
 
 const Contact = () => {
     return (
