@@ -1,14 +1,9 @@
 import React from 'react'
 
-import CountUp from 'react-countup'
-
 import { useInView } from 'react-intersection-observer'
 
-import { fadeIn } from '../variants'
-
-import { motion } from 'framer-motion'
-import Nav from './Nav'
 import Header from './Header'
+import Nav from './Nav'
 
 const About = () => {
     const [ref, inView] = useInView({
@@ -16,95 +11,75 @@ const About = () => {
     })
 
     return (
-        <section id="about" className="section" ref={ref}>
+        <div>
             <Nav />
             <Header />
-            <div className="container mx-auto">
-                <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h:screen">
-                    {/* {img} */}
-                    <motion.div
-                        variants={fadeIn('right', 0.3)}
-                        initial="hidden"
-                        whileInView={'show'}
-                        viewport={{ once: false, amount: 0.3 }}
-                        className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
-                    ></motion.div>
-                    {/* {text} */}
-                    <motion.div
-                        variants={fadeIn('left', 0.5)}
-                        initial="hidden"
-                        whileInView={'show'}
-                        viewport={{ once: false, amount: 0.3 }}
-                        className="flex-1"
-                    >
-                        <h2 className="h2 text-accent">About me</h2>
-                        <h3 className="h3 mb-4">
-                            I'm a Front-end Developer with expertise in React.
+            <section id="about" className="section mx-auto py-8">
+                <h2 className="h2 text-accent">A propos</h2>
+                <div className="flex flex-row gap-12">
+                    <div>
+                        <h3 className="h3 mb-4 text-center">
+                            Partir d'une expertise hôtelière...
                         </h3>
-                        <p className="mb-6">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Tempore, ut. Obcaecati provident ea itaque.
-                            Vitae sed, dolorem eaque, sit reprehenderit quo
-                            voluptas similique accusantium nihil tempore
-                            inventore sapiente reiciendis voluptate.
+                        <p className="mb-6 text-justify">
+                            Après avoir passé plusieurs années à arpenter les
+                            couloirs des hôtels 4*, à accueillir des clients
+                            avec le sourire et à gérer des équipes avec
+                            l'efficacité d'une cheffe d'orchestre, j'ai appris
+                            une chose essentielle : la{' '}
+                            <strong>satisfaction client</strong>, c'est tout un
+                            art. De Guest Relation Manager à Hospitality Manager
+                            en passant par cheffe de cuisine à domicile, que ce
+                            soit à Chicago ou en conciergerie d'entreprise en
+                            France, j'ai perfectionné la maîtrise des{' '}
+                            <strong>relations humaines</strong>, la création
+                            culinaire sur mesure et la gestion des imprévus.{' '}
+                            <strong>Organisée</strong>,{' '}
+                            <strong>rigoureuse</strong> et toujours à la
+                            recherche de l'excellence, j'ai affûté mes
+                            compétences autant dans la{' '}
+                            <strong>gestion d'équipes</strong> que dans la{' '}
+                            <strong>résolution de problèmes complexes</strong>.
                         </p>
-                        {/* {stats} */}
-                        <div className="flex gap-x-6 lg:gap-x-10 mb-12">
-                            <div>
-                                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                                    {inView ? (
-                                        <CountUp
-                                            start={0}
-                                            end={13}
-                                            duration={3}
-                                        />
-                                    ) : null}
-                                </div>
-                                <div className="font-primary text-sm tracking-[2px]">
-                                    Years of <br /> Experience
-                                </div>
-                            </div>
-                            <div>
-                                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                                    {inView ? (
-                                        <CountUp
-                                            start={0}
-                                            end={15}
-                                            duration={3}
-                                        />
-                                    ) : null}
-                                    k+
-                                </div>
-                                <div className="font-primary text-sm tracking-[2px]">
-                                    Projets <br /> Completed
-                                </div>
-                            </div>
-                            <div>
-                                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                                    {inView ? (
-                                        <CountUp
-                                            start={0}
-                                            end={12}
-                                            duration={3}
-                                        />
-                                    ) : null}
-                                    k+
-                                </div>
-                                <div className="font-primary text-sm tracking-[2px]">
-                                    Satisfied <br /> Clients
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex gap-x-8 items-center">
-                            <button className="btn btn-lg">Contact me</button>
-                            <a href="#" className="text-gradient btn-link">
-                                My Portfolio
-                            </a>
-                        </div>
-                    </motion.div>
+                    </div>
+                    <div>
+                        <h3 className="h3 mb-4 text-center">
+                            ... pour exceller en développement web front-end.
+                        </h3>
+                        <p className="mb-6 text-justify">
+                            Et un jour, j'ai voulu aller plus loin : créer un
+                            site web dynamique pour mon entreprise de cuisine.
+                            C’est là que la magie a opéré : j’ai re-découvert
+                            que le code, et je me suis dit : il est temps d'en
+                            faire ton métier ! C’est un peu comme la cuisine :
+                            il faut de la précision, de la créativité (avec un
+                            souspon de patience), et un bon mélange
+                            d’ingrédients pour réussir ! Aujourd'hui, après de{' '}
+                            <strong>nombreux projets réussis </strong> et une
+                            <strong>
+                                certification de développement web
+                            </strong>{' '}
+                            en poche, je suis maintenant{' '}
+                            <strong>développeuse web front-end</strong> avec une
+                            expertise en <strong>React</strong>. Je conçois des{' '}
+                            <strong>
+                                interfaces aussi élégantes qu'efficaces
+                            </strong>
+                            , tout en gardant à l'esprit{' '}
+                            <strong>l'expérience utilisateur</strong>, comme je
+                            l’ai toujours fait avec mes clients dans
+                            l'hôtellerie. Alors, si vous cherchez quelqu'un
+                            d'aussi <strong>passionné par le code</strong> que
+                            par les bonnes recettes, je suis prête à relever le
+                            défi !
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
+                <div className="flex gap-x-8 items-center">
+                    <button className="btn btn-lg">Contact me</button>
+                </div>
+            </section>
+        </div>
     )
 }
 

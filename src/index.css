@@ -10,17 +10,6 @@
     background: #075985;
 }
 
-.gradient,
-.active {
-    background: #0369a1;
-}
-
-.active {
-    color: #136fac;
-    padding: 1rem;
-    border-radius: 100%;
-}
-
 @layer base {
     body {
         @apply font-secondary text-lg leading-8 text-[#e0f2fe];
@@ -43,8 +32,13 @@
     .btn-link {
         @apply text-base;
     }
+    .hover {
+        background: #075985;
+        border-radius: 100%;
+        color: #e0f2fe;
+    }
 
     .section {
-        @apply px-10;
+        @apply px-10 max-w-7xl mx-auto;
     }
 }

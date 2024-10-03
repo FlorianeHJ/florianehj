@@ -7,7 +7,7 @@ const Header = () => {
         <header>
             <div className="section py-5 mx-auto">
                 <div className="flex justify-between items-center ">
-                    <a href="#">
+                    <a href="/">
                         <img className="w-[80px] h-[75px]" src={Logo} alt="" />
                     </a>
                     <p className="text-base text-center italic px-10 py-2 bg-primary/20 backdrop-blur-2xl  h-[60px] rounded-full max-w-[900px] mx-auto">

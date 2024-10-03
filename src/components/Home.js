@@ -30,7 +30,7 @@ const Banner = () => {
                                     2000,
                                     'experte React',
                                     2000,
-                                    'techn passionnée',
+                                    'tech passionnée',
                                     2000,
                                 ]}
                                 speed={50}
@@ -42,7 +42,7 @@ const Banner = () => {
                         <p className="mb-8 mx-auto ">
                             Développeuse web front-end{' '}
                             <strong>passionnée</strong>, spécialisée en{' '}
-                            <strong>React</strong> et
+                            <strong>React</strong> et{' '}
                             <strong>Tailwind CSS</strong>, j'ai réalisé
                             plusieurs projets alliant{' '}
                             <strong>efficacité</strong>,{' '}
@@ -56,7 +56,7 @@ const Banner = () => {
                         <div className="flex max-w-max gap-x-6 items-center mb-12 mx-auto ">
                             <a href="/contact">
                                 <button className="btn btn-lg">
-                                    Contact me
+                                    Contactez moi
                                 </button>
                             </a>
                         </div>
