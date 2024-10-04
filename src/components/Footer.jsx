@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaMailBulk } from 'react-icons/fa'
 const Footer = () => {
     return (
         <footer className=" absolute  bg-background/80 backdrop-blur-2xl w-full">
-            <p className="text-sm p-2 flex flex-row text-center justify-center gap-5">
+            <p className="text-sm p-2 flex flex-row text-center justify-start gap-2">
                 © 2024 Created with 🩵 by{' '}
                 <span>
                     <a

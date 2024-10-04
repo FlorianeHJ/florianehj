@@ -3,15 +3,12 @@ import Img1 from '../assets/portfolio-img1.png'
 import Img2 from '../assets/portfolio-img2.png'
 import Img3 from '../assets/portfolio-img3.png'
 import Card from '../components/Card'
-import Footer from '../components/Footer'
 import Header from '../components/Header'
-import Nav from '../components/Nav'
 import Tag from '../components/Tag'
 
 const Work = () => {
     return (
-        <div>
-            <Nav />
+        <div id="work">
             <Header />
             <section className="section mx-auto">
                 <div className="flex flex-col gap-4 py-8 items-center">
@@ -63,7 +60,6 @@ const Work = () => {
                     </a>
                 </div>
             </section>
-            <Footer />
         </div>
     )
 }
