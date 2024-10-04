@@ -4,6 +4,7 @@ import Image from '../assets/profil2.png'
 
 import { TypeAnimation } from 'react-type-animation'
 
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Nav from '../components/Nav'
 
@@ -65,6 +66,7 @@ const Banner = () => {
                     />
                 </div>
             </section>
+            <Footer />
         </div>
     )
 }

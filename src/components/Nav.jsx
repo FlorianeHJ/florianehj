@@ -23,12 +23,7 @@ const Nav = () => {
                 >
                     <BiUser />
                 </Link>
-                <Link
-                    to="/services"
-                    className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:hover"
-                >
-                    <BsClipboardData />
-                </Link>
+
                 <Link
                     to="/work"
                     className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:hover"
