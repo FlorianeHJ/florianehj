@@ -5,7 +5,7 @@ import Logo from '../assets/logo.png'
 const Header = () => {
     return (
         <header>
-            <div className="section py-3 ml-auto mr-20">
+            <div className="section py-3 mx-auto">
                 <div className="flex gap-5 justify-between items-center ">
                     <a href="/">
                         <img

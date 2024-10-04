@@ -19,7 +19,9 @@ const Work = () => {
                     <div>
                         <h2 className="h2 text-accent text-center">
                             Mes projets <br />
-                            <span className="text-sm italic ">Top 3</span>
+                            <span className="text-[25px] font-secondary lowercase ">
+                                Top 3
+                            </span>
                         </h2>
                     </div>
                     <div className="flex flex-row gap-7">

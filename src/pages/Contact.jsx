@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaGithub, FaLinkedin, FaMailBulk } from 'react-icons/fa'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Nav from '../components/Nav'
@@ -8,35 +9,52 @@ const Contact = () => {
         <div>
             <Nav />
             <Header />
-            <section className="section mx-auto">
-                <div className="flex-1 flex ">
-                    <div>
-                        <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide ">
-                            Me contacter
-                        </h4>
-                        <h2 className="text-[45px] leading-none mb-12">
-                            Travaillons ensemble !
-                        </h2>
+            <section className="section mx-auto flex-1 flex flex-col justify-center items-center">
+                <div className="flex-1 flex flex-col justify-center items-center ">
+                    <h2 className="h2 text-4xl uppercase text-accent pt-10">
+                        Travaillons ensemble !
+                    </h2>
+                    <h3 className="text-[35px]">
+                        Je suis disponible dès Janvier 2025
+                    </h3>
+                </div>
+                <div>
+                    <h4>Contactez moi via :</h4>
+                    <div className="flex text-[22px] gap-x-6 max-w-max mx-auto ">
+                        <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/floriane-hurtebize-03218b119/"
+                        >
+                            <FaLinkedin />
+                        </a>
+                        <a target="_blank" href="https://github.com/FlorianeHJ">
+                            <FaGithub />
+                        </a>
+                        <a target="_blank" href="mailto:fjulia.dev@gmail.com">
+                            <FaMailBulk />
+                        </a>
                     </div>
                 </div>
-                {/* {form}
-                    <form className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start">
-                        <input
-                            className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
-                            type="text"
-                            placeholder="Your name"
-                        />
-                        <input
-                            className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
-                            type="text"
-                            placeholder="Your email"
-                        />
-                        <textarea
-                            className="bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
-                            placeholder="Your message"
-                        ></textarea>
-                        <button className="btn btn-lg">Send Message</button>
-                    </form> */}
+                <h4>Contactez :</h4>
+                <form className="flex flex-col gap-y-6 py-10 w-1/2">
+                    <input
+                        className="border rounded-lg p-2 outline-none w-full transition-all text-black"
+                        type="text"
+                        placeholder="Your name"
+                    />
+                    <input
+                        className="border rounded-lg p-2 outline-none w-full transition-all text-black"
+                        type="text"
+                        placeholder="Your email"
+                    />
+                    <textarea
+                        className="border rounded-lg p-2 outline-none w-full transition-all text-blackresize-none"
+                        placeholder="Your message"
+                    ></textarea>
+                    <div className="flex justify-center">
+                        <button className="btn btn-sm">Envoyer</button>
+                    </div>
+                </form>
             </section>
             <Footer />
         </div>

@@ -45,8 +45,8 @@ const Banner = () => {
                         <strong>design responsive</strong> et{' '}
                         <strong>performance</strong>.<strong> Organisée</strong>{' '}
                         et toujours à la recherche de{' '}
-                        <strong>solutions créatives</strong>, j'excelle dans la
-                        création d'interfaces utilisateur intuitives et
+                        <strong>solutions créatives</strong>, je m'épanouie dans
+                        la création d'interfaces utilisateur intuitives et
                         optimisées.
                     </p>
                     <div className="flex max-w-max gap-x-6 items-center mb-12 mx-auto ">

@@ -44,7 +44,7 @@ const About = () => {
                     </h2>
                     <div className="flex flex-row gap-12 py-3">
                         <div>
-                            <h3 className="h3 mb-4 text-center text-2xl">
+                            <h3 className="h3 mb-10 text-center text-2xl">
                                 Partir d'une expertise hôtelière...
                             </h3>
                             <p className="mb-6 text-justify">
@@ -73,9 +73,8 @@ const About = () => {
                             </p>
                         </div>
                         <div>
-                            <h3 className="h3 mb-4 text-center text-2xl">
-                                ... pour exceller en développement web
-                                front-end.
+                            <h3 className="h3 mb-10 text-center text-2xl">
+                                ... pour coder et programmer !
                             </h3>
                             <p className="mb-6 text-justify">
                                 Et un jour, j'ai voulu aller plus loin : créer
@@ -110,49 +109,49 @@ const About = () => {
                         </div>
                     </div>
                     <div className="flex gap-x-8 justify-center items-center">
-                        <button className="btn btn-lg">Contactez moi</button>
+                        <button className="btn btn-sm">Contactez moi</button>
                     </div>
                 </div>
                 {/* {Partie expérience & formations} */}
                 <div>
-                    <h2 className="h2 text-accent text-center text-4xl py-3">
+                    <h2 className="h2 text-accent text-center text-4xl py-14 ">
                         Le parcours
                     </h2>
-                    <div className="flex-1">
-                        <div>
-                            {experience.map((exp, index) => {
-                                const { name, description, link } = exp
-                                return (
-                                    <div
-                                        className="border-b border-white/20 h-[146px] mb-[38px] flex"
-                                        key={index}
-                                    >
-                                        <div className="max-w-[476px]">
-                                            <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
-                                                {name}
-                                            </h4>
-                                            <p className="font-secondary leading-tight text-sm">
-                                                {description}
-                                            </p>
-                                        </div>
-                                        <div className="flex flex-col flex-1 items-end">
-                                            <a
-                                                href="#"
-                                                className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
-                                            >
-                                                <BsArrowUpRight />
-                                            </a>
-                                            <a
-                                                href="#"
-                                                className="text-gradient text-sm"
-                                            >
-                                                {link}
-                                            </a>
-                                        </div>
+                    <div className="flex-1 flex flex-col items-center justify-center">
+                        {experience.map((exp, index) => {
+                            const { name, description, link } = exp
+                            return (
+                                <div
+                                    className="border-b border-white/20 h-[146px] mb-[38px] flex w-2/3"
+                                    key={index}
+                                >
+                                    <div className="max-w-[476px]">
+                                        <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
+                                            {name}
+                                        </h4>
+                                        <p className="font-secondary leading-tight text-sm">
+                                            {description}
+                                        </p>
                                     </div>
-                                )
-                            })}
-                        </div>
+                                    <div className="flex flex-col flex-1 items-end">
+                                        <a
+                                            target="_blank"
+                                            href="https://www.linkedin.com/in/floriane-hurtebize-03218b119/"
+                                            className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
+                                        >
+                                            <BsArrowUpRight />
+                                        </a>
+                                        <a
+                                            target="_blank"
+                                            href="https://www.linkedin.com/in/floriane-hurtebize-03218b119/"
+                                            className="text-gradient text-sm"
+                                        >
+                                            {link}
+                                        </a>
+                                    </div>
+                                </div>
+                            )
+                        })}
                     </div>
                 </div>
             </section>

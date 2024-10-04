@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaMailBulk } from 'react-icons/fa'
 
 const Footer = () => {
     return (
-        <footer className="bottom-12 bg-primary/40 backdrop-blur-2xl ">
+        <footer className=" absolute  bg-background/80 backdrop-blur-2xl w-full">
             <p className="text-sm p-2 flex flex-row text-center justify-center gap-5">
                 © 2024 Created with 🩵 by{' '}
                 <span>
