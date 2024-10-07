@@ -1,18 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwindcss forms;
 
 .btn {
-    background: #0c4a6e;
+    background: #0d2847;
 }
 
 .btn:hover {
-    background: #075985;
+    background: #003362;
+}
+
+.btn:active {
+    background: #004074;
 }
 
 @layer base {
     body {
-        @apply font-secondary text-lg leading-8 text-[#e0f2fe];
+        @apply font-secondary text-lg leading-8 text-primary;
     }
     .h2 {
         @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
@@ -21,7 +26,7 @@
         @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
     }
     .btn {
-        @apply rounded-full font-primary text-[#e0f2fe] font-medium;
+        @apply rounded-full font-primary text-primary font-medium;
     }
     .btn-sm {
         @apply h-[48px] px-6 text-sm;
@@ -33,7 +38,7 @@
         @apply text-base;
     }
     .hover {
-        background: #075985;
+        background: #003362;
         border-radius: 100%;
         color: #e0f2fe;
     }

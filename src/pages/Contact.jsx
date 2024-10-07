@@ -15,9 +15,9 @@ const Contact = () => {
                     Je suis disponible dès Janvier 2025
                 </h3>
             </div>
-            <div>
-                <h4>Contactez moi via :</h4>
-                <div className="flex text-[22px] gap-x-6 max-w-max mx-auto ">
+            <div className="flex flex-col w-full items-center">
+                <h4>Contactez moi via</h4>
+                <div className="flex text-[40px] gap-x-6 mx-auto ">
                     <a
                         target="_blank"
                         href="https://www.linkedin.com/in/floriane-hurtebize-03218b119/"
@@ -31,27 +31,32 @@ const Contact = () => {
                         <FaMailBulk />
                     </a>
                 </div>
+
+                <h4>Ou via ce formulaire</h4>
+                <form className="flex flex-col gap-y-6 py-10 w-2/3">
+                    <label
+                        for="Username"
+                        class="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
+                    ></label>
+                    <input
+                        className="border rounded-lg p-2 outline-none w-full transition-all text-secondary"
+                        type="text"
+                        placeholder="Your name"
+                    />
+                    <input
+                        className="border rounded-lg p-2 outline-none w-full transition-all text-secondary"
+                        type="text"
+                        placeholder="Your email"
+                    />
+                    <textarea
+                        className="border rounded-lg p-2 outline-none w-full transition-all text-secondary resize-none"
+                        placeholder="Your message"
+                    ></textarea>
+                    <div className="flex justify-center">
+                        <button className="btn btn-sm">Envoyer</button>
+                    </div>
+                </form>
             </div>
-            <h4>Contactez :</h4>
-            <form className="flex flex-col gap-y-6 py-10 w-1/2">
-                <input
-                    className="border rounded-lg p-2 outline-none w-full transition-all text-black"
-                    type="text"
-                    placeholder="Your name"
-                />
-                <input
-                    className="border rounded-lg p-2 outline-none w-full transition-all text-black"
-                    type="text"
-                    placeholder="Your email"
-                />
-                <textarea
-                    className="border rounded-lg p-2 outline-none w-full transition-all text-blackresize-none"
-                    placeholder="Your message"
-                ></textarea>
-                <div className="flex justify-center">
-                    <button className="btn btn-sm">Envoyer</button>
-                </div>
-            </form>
         </section>
     )
 }

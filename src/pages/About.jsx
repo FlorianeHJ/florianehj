@@ -102,7 +102,7 @@ const About = () => {
             {/* {Partie expérience & formations} */}
             <div>
                 <h2 className="h2 text-accent text-center text-4xl py-14 ">
-                    Le parcours
+                    Mon parcours
                 </h2>
                 <div className="flex-1 flex flex-col items-center justify-center">
                     {experience.map((exp, index) => {

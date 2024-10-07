@@ -9,7 +9,7 @@ const Nav = () => {
                 <Link
                     to="home"
                     smooth={true}
-                    className="cursor-pointer w-[60px] h-[60px]  flex items-center justify-center hover:hover "
+                    className="cursor-pointer w-[60px] h-[60px]  flex items-center justify-center hover:hover active:active "
                 >
                     <BiHomeAlt />
                 </Link>

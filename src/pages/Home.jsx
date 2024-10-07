@@ -4,7 +4,10 @@ import Image from '../assets/profil2.png'
 
 const Banner = () => {
     return (
-        <section id="home" className="section flex pt-40 flex-row gap-12">
+        <section
+            id="home"
+            className="section flex pt-36 h-screen flex-row gap-12"
+        >
             {/* {text} */}
             <div className="flex-1 justify-between items-center text-center font-secondary">
                 <h1 className="text-[60px] font-bold leading-[0.8] uppercase">
@@ -40,7 +43,7 @@ const Banner = () => {
                     création d'interfaces utilisateur intuitives et optimisées.
                 </p>
                 <div className="flex max-w-max gap-x-6 items-center mb-12 mx-auto ">
-                    <a href="/contact">
+                    <a href="#contact">
                         <button className="btn btn-lg">Contactez moi</button>
                     </a>
                 </div>
