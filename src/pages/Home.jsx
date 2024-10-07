@@ -6,15 +6,17 @@ const Banner = () => {
     return (
         <section
             id="home"
-            className="section flex pt-36 h-screen flex-row gap-12"
+            className="section flex justify-center items-center h-screen flex-row gap-12"
         >
             {/* {text} */}
             <div className="flex-1 justify-between items-center text-center font-secondary">
-                <h1 className="text-[60px] font-bold leading-[0.8] uppercase">
-                    Développeuse Web{' '}
-                    <span className="text-[70px] text-accent">React</span>
+                <h1 className="text-[45px] sm:text-[60px] font-bold leading-[0.8] uppercase">
+                    Développeuse Web <br />
+                    <span className="text-[55px] sm:text-[70px] text-accent">
+                        React
+                    </span>
                 </h1>
-                <div className="text-[45px] font-secondary font-semibold uppercase leading-[2]">
+                <div className="hidden md:block text-[45px] font-secondary font-semibold uppercase leading-[2]">
                     <span className=" text-white mr-4">Je suis</span>
                     <TypeAnimation
                         sequence={[
@@ -31,7 +33,7 @@ const Banner = () => {
                         repeat={Infinity}
                     />
                 </div>
-                <p className="mb-8 mx-auto ">
+                <p className="text-lg mb-8 mx-auto ">
                     Développeuse web front-end <strong>passionnée</strong>,
                     spécialisée en <strong>React</strong> et{' '}
                     <strong>Tailwind CSS</strong>, j'ai réalisé plusieurs
@@ -51,7 +53,7 @@ const Banner = () => {
             {/* {image} */}
             <div className="">
                 <img
-                    className="w-[220px] h-[400px] rounded-full backdrop-blur-md"
+                    className="hidden md:block md:w-[220px] rounded-full backdrop-blur-md"
                     src={Image}
                     alt=""
                 />
