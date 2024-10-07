@@ -4,6 +4,7 @@ import Img2 from '../assets/portfolio-img2.png'
 import Img3 from '../assets/portfolio-img3.png'
 import Card from '../components/Card'
 
+import { Link } from 'react-router-dom'
 import Tag from '../components/Tag'
 
 const Work = () => {
@@ -51,11 +52,11 @@ const Work = () => {
                         <Tag tech="Redux" />
                     </Card>
                 </div>
-                <a href="/allworks" className="py-8">
+                <Link to="/allworks" className="py-8">
                     <button className="btn btn-sm  ">
                         Voir tous mes projets
                     </button>
-                </a>
+                </Link>
             </div>
         </section>
     )

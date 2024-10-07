@@ -2,14 +2,14 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import Image from '../assets/profil2.png'
 
-const Banner = () => {
+const Home = () => {
     return (
         <section
             id="home"
-            className="section flex justify-center  items-center h-screen flex-row md:gap-12"
+            className="section flex justify-center items-center h-screen flex-row md:gap-12"
         >
             {/* {text} */}
-            <div className="flex-1 justify-center items-center text-center font-secondary">
+            <div className=" flex flex-col justify-center  items-center text-center font-secondary ">
                 <h1 className="text-[45px] sm:text-[60px] font-bold leading-[0.8] uppercase">
                     Développeuse Web <br />
                     <span className="text-[55px] sm:text-[70px] text-accent">
@@ -51,15 +51,15 @@ const Banner = () => {
                 </div>
             </div>
             {/* {image} */}
-            <div className="">
+            <div className="w-1/3">
                 <img
                     className="hidden md:block md:w-[220px] rounded-full backdrop-blur-md"
                     src={Image}
-                    alt=""
+                    alt="Photo de Floriane HJ"
                 />
             </div>
         </section>
     )
 }
 
-export default Banner
+export default Home

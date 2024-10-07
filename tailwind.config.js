@@ -22,6 +22,7 @@ module.exports = {
             primary: '#C2E6FF',
             secondary: '#0D1520',
             accent: '#70B8FF',
+            transparent: 'transparent',
         },
         extend: {
             backgroundImage: {

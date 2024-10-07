@@ -109,13 +109,15 @@ const About = () => {
                         const { name, description, link } = exp
                         return (
                             <div
-                                className="border-b border-white/20 h-[146px] mb-[38px] flex w-2/3"
+                                className="border-b border-white/20 w-4/5 flex md:w-2/3 py-8"
                                 key={index}
                             >
                                 <div className="max-w-[476px]">
-                                    <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
-                                        {name}
-                                    </h4>
+                                    <a target="_blank" href="#">
+                                        <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
+                                            {name}
+                                        </h4>
+                                    </a>
                                     <p className="font-secondary leading-tight text-sm">
                                         {description}
                                     </p>
@@ -124,14 +126,14 @@ const About = () => {
                                     <a
                                         target="_blank"
                                         href="https://www.linkedin.com/in/floriane-hurtebize-03218b119/"
-                                        className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
+                                        className="hidden md:flex btn w-9 h-9 mb-[42px] justify-center items-center"
                                     >
                                         <BsArrowUpRight />
                                     </a>
                                     <a
                                         target="_blank"
                                         href="https://www.linkedin.com/in/floriane-hurtebize-03218b119/"
-                                        className="text-gradient text-sm"
+                                        className="hidden lg:block text-gradient text-sm"
                                     >
                                         {link}
                                     </a>

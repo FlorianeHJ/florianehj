@@ -12,20 +12,22 @@ import Work from './pages/Work'
 
 const App = () => {
     return (
-        <div className="bg-site  bg-no-repeat bg-cover overflow-hidden">
-            <Nav />
-            <Header />
-            <Home />
-            <About />
-            <Work />
-            <BrowserRouter>
+        <BrowserRouter>
+            <div className="bg-site  bg-no-repeat bg-cover overflow-hidden">
+                <Nav />
+                <Header />
+                <Home />
+                <About />
+                <Work />
+
+                <Contact />
+                <Footer />
+
                 <Routes>
                     <Route path="/allworks" Component={AllWorks} />
                 </Routes>
-            </BrowserRouter>
-            <Contact />
-            <Footer />
-        </div>
+            </div>
+        </BrowserRouter>
     )
 }
 
