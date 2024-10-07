@@ -3,7 +3,7 @@ import React from 'react'
 const Card = ({ img, alt, name, children }) => {
     return (
         <div>
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl w-[350px] h-[200px] cursor-pointer">
+            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl w-[330px] h-[200px] cursor-pointer">
                 {/* Fond noir par défaut qui disparaît au hover */}
                 <div className="bg-secondary/50 group-hover:bg-transparent w-full h-full absolute z-40 transition-all duration-300"></div>
                 {/* {image légèrement zoomée par défaut et dézoom au hover} */}

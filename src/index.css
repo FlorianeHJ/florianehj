@@ -15,6 +15,20 @@
     background: #004074;
 }
 
+.slick-slide {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+
+.slick-slide.slick-active {
+    opacity: 1;
+}
+
+.slick-prev,
+.slick-next {
+    z-index: 1; /* pour afficher les flèches au-dessus du carrousel */
+}
+
 @layer base {
     body {
         @apply font-secondary text-lg leading-8 text-primary;
