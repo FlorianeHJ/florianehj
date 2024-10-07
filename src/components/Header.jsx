@@ -34,7 +34,7 @@ const Header = () => {
     }, [prevScroll])
 
     return (
-        <header ref={headerRef} className="section mx-auto py-3  ">
+        <header ref={headerRef} className="section mx-auto py-3">
             <div className="fixed z-50">
                 <div className="flex gap-5 justify-center items-center ">
                     <a href="#home" className="md:w-24 sm:w-20 w-16">

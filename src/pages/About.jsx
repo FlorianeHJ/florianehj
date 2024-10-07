@@ -33,15 +33,15 @@ const About = () => {
         <section id="about" className="section mx-auto py-8">
             {/* {Partie blabla} */}
             <div>
-                <h2 className="h2 text-accent text-center text-4xl py-3">
+                <h2 className="h2 text-accent text-center text-3xl sm:text-4xl py-3">
                     Le discours d'une dev
                 </h2>
-                <div className="flex flex-row gap-12 py-3">
+                <div className="flex flex-col md:flex-row gap-12 py-3">
                     <div>
-                        <h3 className="h3 mb-10 text-center text-2xl">
+                        <h3 className="h3 mb-10 text-center text-xl sm:text-2xl">
                             Partir d'une expertise hôtelière...
                         </h3>
-                        <p className="mb-6 text-justify">
+                        <p className="text-base sm:text-lg mb-6 text-justify">
                             Après avoir passé plusieurs années à arpenter les
                             couloirs des hôtels 4*, à accueillir des clients
                             avec le sourire et à gérer des équipes avec
@@ -63,10 +63,10 @@ const About = () => {
                         </p>
                     </div>
                     <div>
-                        <h3 className="h3 mb-10 text-center text-2xl">
+                        <h3 className="h3 mb-10 text-center text-xl sm:text-2xl">
                             ... pour coder et programmer !
                         </h3>
-                        <p className="mb-6 text-justify">
+                        <p className=" text-base sm:text-lg mb-6 text-justify">
                             Et un jour, j'ai voulu aller plus loin : créer un
                             site web dynamique pour mon entreprise de cuisine.
                             C’est là que la magie a opéré : j’ai re-découvert

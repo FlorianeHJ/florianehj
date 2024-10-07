@@ -6,10 +6,10 @@ const Banner = () => {
     return (
         <section
             id="home"
-            className="section flex justify-center items-center h-screen flex-row gap-12"
+            className="section flex justify-center  items-center h-screen flex-row md:gap-12"
         >
             {/* {text} */}
-            <div className="flex-1 justify-between items-center text-center font-secondary">
+            <div className="flex-1 justify-center items-center text-center font-secondary">
                 <h1 className="text-[45px] sm:text-[60px] font-bold leading-[0.8] uppercase">
                     Développeuse Web <br />
                     <span className="text-[55px] sm:text-[70px] text-accent">
