@@ -13,7 +13,7 @@
         @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
     }
     .btn {
-        @apply font-primary text-text font-bold px-8 py-2 border-b  transition duration-200 ease-in-out;
+        @apply font-primary text-text font-bold px-8 py-2 border-b  transition duration-200 ease-in-out text-2xl;
     }
 
     .btn:hover {

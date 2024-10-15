@@ -26,7 +26,6 @@ module.exports = {
             text: '#5B5963',
             transparent: 'transparent',
             btnHover: '#e5e5e5',
-
             btnActive: '#c4c4ca',
         },
 

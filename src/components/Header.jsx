@@ -57,17 +57,26 @@ const Header = () => {
                     </div>
                 </div>
                 <div>
-                    <div className="flex text-3xl gap-x-6 max-w-max mx-auto ">
+                    <div className="flex text-3xl gap-x-6 max-w-max mx-auto">
                         <a
                             target="_blank"
                             href="https://www.linkedin.com/in/floriane-hurtebize-03218b119/"
+                            className="transition-transform duration-200 hover:scale-125 hover:text-accent"
                         >
                             <FaLinkedin />
                         </a>
-                        <a target="_blank" href="https://github.com/FlorianeHJ">
+                        <a
+                            target="_blank"
+                            href="https://github.com/FlorianeHJ"
+                            className="transition-transform duration-200 hover:scale-125 hover:text-accent"
+                        >
                             <FaGithub />
                         </a>
-                        <a target="_blank" href="mailto:fjulia.dev@gmail.com">
+                        <a
+                            target="_blank"
+                            href="mailto:fjulia.dev@gmail.com"
+                            className="transition-transform duration-200 hover:scale-125 hover:text-accent"
+                        >
                             <FaMailBulk />
                         </a>
                     </div>
