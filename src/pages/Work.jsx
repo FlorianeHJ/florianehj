@@ -58,7 +58,7 @@ const Work = () => {
     ]
 
     return (
-        <section id="work" className="section mx-auto ">
+        <section id="work" className="section bg-background2 mx-auto ">
             <div className="flex flex-col gap-4 py-8 items-center">
                 <div>
                     <h2 className="h2 text-accent text-center">

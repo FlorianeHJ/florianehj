@@ -1,6 +1,6 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
-import Image from '../assets/profil3.png'
+import Image from '../assets/profil4.png'
 
 const Home = () => {
     return (
@@ -9,14 +9,15 @@ const Home = () => {
             className="section flex justify-center items-center h-screen flex-row md:gap-12 bg-background2"
         >
             {/* {text} */}
-            <div className=" flex flex-col justify-center  items-center text-center font-secondary ">
-                <h1 className="text-[45px] sm:text-[60px] font-bold leading-[0.8] uppercase">
-                    Développeuse Web <br />
+            <div className=" flex flex-col justify-center  items-center text-center font-primary  ">
+                <h1 className="text-[45px] sm:text-[60px] font-bold leading-[1] uppercase">
+                    Développeuse Web
                     <span className="text-[55px] sm:text-[70px] text-accent">
+                        {' '}
                         React
                     </span>
                 </h1>
-                <div className="hidden md:block text-[45px] font-secondary font-semibold uppercase leading-[2]">
+                <div className="hidden md:block text-[45px] font-primary font-semibold uppercase leading-[2]">
                     <span className=" text-white mr-4">Je suis</span>
                     <TypeAnimation
                         sequence={[
@@ -33,7 +34,7 @@ const Home = () => {
                         repeat={Infinity}
                     />
                 </div>
-                <p className="md:text-2xl text-xl mb-8 mx-auto ">
+                <p className="md:text-2xl text-xl py-10 font-secondary ">
                     Développeuse web front-end <strong>passionnée</strong>,
                     spécialisée en <strong>React</strong> et{' '}
                     <strong>Tailwind CSS</strong>, j'ai réalisé plusieurs
@@ -44,16 +45,16 @@ const Home = () => {
                     <strong>solutions créatives</strong>, je m'épanouie dans la
                     création d'interfaces utilisateur intuitives et optimisées.
                 </p>
-                <div className="flex max-w-max gap-x-6 items-center mb-12 mx-auto ">
+                <div className="flex max-w-max gap-x-6 items-center  ">
                     <a href="#contact">
                         <button className="btn btn-lg">Contactez moi</button>
                     </a>
                 </div>
             </div>
             {/* {image} */}
-            <div className="">
+            <div>
                 <img
-                    className="hidden md:block rounded-full backdrop-blur-md"
+                    className="hidden md:block rounded-full backdrop-blur-md shadow-lg"
                     src={Image}
                     alt="Photo de Floriane HJ"
                 />

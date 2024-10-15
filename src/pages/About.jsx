@@ -30,7 +30,7 @@ const experience = [
 
 const About = () => {
     return (
-        <section id="about" className="section mx-auto py-8">
+        <section id="about" className="section bg-background1 mx-auto py-8">
             {/* {Partie blabla} */}
             <div>
                 <h2 className="h2 text-accent text-center text-3xl sm:text-4xl py-3">

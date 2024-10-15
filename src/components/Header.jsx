@@ -36,10 +36,10 @@ const Header = () => {
     return (
         <header
             ref={headerRef}
-            className="section fixed z-50 py-3 left-0 right-0 mx-auto max-w-screen"
+            className="section fixed z-50 py-2 left-0 right-0 mx-auto max-w-screen"
         >
             <div className="flex flex-row gap-9 justify-center items-center ">
-                <div className="md:w-24 sm:w-18 w-14">
+                <div className="md:w-20 sm:w-16 w-12">
                     <a href="#home">
                         <img
                             src={logo}
