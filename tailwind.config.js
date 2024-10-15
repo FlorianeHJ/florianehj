@@ -19,16 +19,14 @@ module.exports = {
             xl: '1280px',
         },
         colors: {
-            primary: '#C2E6FF',
-            secondary: '#0D1520',
-            accent: '#70B8FF',
+            background1: '#FFFFFF',
+            background2: '#F5F5F5',
+            primary: '#5B5963',
+            accent: '#4CCCE6',
+            text: '#5B5963',
             transparent: 'transparent',
         },
-        extend: {
-            backgroundImage: {
-                site: "url('./assets/bg1.png')",
-            },
-        },
+
         plugins: [],
     },
 }

@@ -9,7 +9,7 @@ import Work from './pages/Work'
 
 const App = () => {
     return (
-        <div className="bg-site  bg-no-repeat bg-cover overflow-hidden">
+        <div>
             <Nav />
             <Header />
             <Home />

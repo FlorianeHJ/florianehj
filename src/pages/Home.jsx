@@ -1,12 +1,12 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
-import Image from '../assets/profil2.png'
+import Image from '../assets/profil3.png'
 
 const Home = () => {
     return (
         <section
             id="home"
-            className="section flex justify-center items-center h-screen flex-row md:gap-12"
+            className="section flex justify-center items-center h-screen flex-row md:gap-12 bg-background2"
         >
             {/* {text} */}
             <div className=" flex flex-col justify-center  items-center text-center font-secondary ">
@@ -33,7 +33,7 @@ const Home = () => {
                         repeat={Infinity}
                     />
                 </div>
-                <p className="text-lg mb-8 mx-auto ">
+                <p className="md:text-2xl text-xl mb-8 mx-auto ">
                     Développeuse web front-end <strong>passionnée</strong>,
                     spécialisée en <strong>React</strong> et{' '}
                     <strong>Tailwind CSS</strong>, j'ai réalisé plusieurs
@@ -51,9 +51,9 @@ const Home = () => {
                 </div>
             </div>
             {/* {image} */}
-            <div className="w-1/3">
+            <div className="">
                 <img
-                    className="hidden md:block md:w-[220px] rounded-full backdrop-blur-md"
+                    className="hidden md:block rounded-full backdrop-blur-md"
                     src={Image}
                     alt="Photo de Floriane HJ"
                 />
