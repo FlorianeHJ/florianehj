@@ -7,7 +7,7 @@
         @apply text-lg leading-8 text-text font-secondary;
     }
     .h2 {
-        @apply font-primary font-bold md:text-5xl sm:text-3xl tracking-[20%] uppercase py-16;
+        @apply font-primary font-bold md:text-5xl sm:text-3xl tracking-[20%] uppercase py-16 text-accent;
     }
     .h3 {
         @apply font-primary font-semibold md:text-3xl;

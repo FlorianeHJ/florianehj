@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Img1 from '../assets/portfolio-img1.png'
 import Img2 from '../assets/portfolio-img2.png'
 import Img3 from '../assets/portfolio-img3.png'
@@ -11,7 +12,9 @@ import Tag from '../components/Tag'
 const Work = () => {
     const [visibleCount, setVisibleCount] = useState(3) // Commence par afficher 3 projets
     const [isExpanded, setIsExpanded] = useState(false) // État pour gérer l'affichage étendu
+    const [selectedTag, setSelectedTag] = useState(null) // État pour le tag sélectionné
 
+    // Les projets à afficher
     const projects = [
         {
             img: Img1,
@@ -24,7 +27,7 @@ const Work = () => {
             img: Img2,
             alt: 'Screen shot du projet Yoga App',
             name: 'Yoga App',
-            tags: ['Javascript', 'CSS'],
+            tags: ['React', 'Tailwind', 'Node.JS', 'MongoDB'],
             link: 'https://github.com/FlorianeHJ/Yoga-App.git',
         },
         {
@@ -53,24 +56,66 @@ const Work = () => {
             alt: 'Screen shot du projet Booki',
             name: 'Booki',
             tags: ['HTML', 'CSS'],
-            link: 'https://github.com/FlorianeHJ/OC---Nina-Carducci.git',
+            link: 'https://github.com/FlorianeHJ/OC---Booki.git',
         },
     ]
 
+    // Extraire une liste unique de tous les tags + ajout du tag "Tous"
+    const allTags = [
+        'Tous',
+        ...new Set(projects.flatMap((project) => project.tags)),
+    ]
+
+    // Fonction pour gérer la sélection d'un tag
+    const handleTagClick = (tag) => {
+        if (tag === 'Tous') {
+            setSelectedTag(null) // Si "Tous" est sélectionné, on désélectionne le tag
+        } else if (selectedTag === tag) {
+            setSelectedTag(null) // Si le tag est déjà sélectionné, on le désélectionne
+        } else {
+            setSelectedTag(tag) // Sinon on sélectionne le nouveau tag
+        }
+    }
+
+    // Filtrer les projets par tag sélectionné
+    const filteredProjects = selectedTag
+        ? projects.filter((project) => project.tags.includes(selectedTag))
+        : projects
+
     return (
-        <section id="work" className="section bg-background2 mx-auto ">
-            <div className="flex flex-col gap-4 py-8 items-center">
-                <div>
-                    <h2 className="h2 text-accent text-center">
-                        Mes projets <br />
-                        <span className="text-[25px] font-secondary lowercase ">
-                            Top 3
-                        </span>
-                    </h2>
-                </div>
-                <div className="flex flex-row gap-7 flex-wrap justify-center">
-                    {projects.slice(0, visibleCount).map((project, index) => (
-                        <a key={index} target="_blank" href={project.link}>
+        <section
+            id="work"
+            className="section bg-background2 mx-auto flex flex-col gap-6 py-8 justify-center items-center"
+        >
+            <h2 className="h2 ">
+                Mes projets <br />
+            </h2>
+
+            {/* Section filtre */}
+            <div className="flex gap-5 justify-center pb-12 flex-wrap">
+                {allTags.map((tag, index) => (
+                    <button
+                        key={index}
+                        onClick={() => handleTagClick(tag)}
+                        className={`btn px-4 py-2 text-base font-secondary ${
+                            selectedTag === null && tag === 'Tous'
+                                ? 'shadow-md translate-y-[2px] border-transparent'
+                                : selectedTag === tag
+                                ? 'shadow-md translate-y-[2px] border-transparent'
+                                : 'btn'
+                        }`}
+                    >
+                        {tag}
+                    </button>
+                ))}
+            </div>
+
+            {/* Affichage des projets filtrés */}
+            <div className="flex flex-row gap-10 flex-wrap justify-center">
+                {filteredProjects
+                    .slice(0, visibleCount)
+                    .map((project, index) => (
+                        <Link key={index} to={`/projects/${index + 1}`}>
                             <Card
                                 img={project.img}
                                 alt={project.alt}
@@ -80,37 +125,35 @@ const Work = () => {
                                     <Tag key={index} tech={tag} />
                                 ))}
                             </Card>
-                        </a>
+                        </Link>
                     ))}
-                </div>
-                {isExpanded && ( // Affiche le bouton "Afficher moins" seulement si la vue est élargie
-                    <div className="py-8">
-                        <button
-                            className="btn btn-sm"
-                            onClick={() => {
-                                setVisibleCount(3) // Réinitialise pour afficher uniquement les 3 premiers projets
-                                setIsExpanded(false) // Remet l'état à non élargi
-                            }}
-                        >
-                            Afficher moins
-                        </button>
-                    </div>
-                )}
-                {visibleCount < projects.length &&
-                    !isExpanded && ( // Affiche le bouton "Afficher plus" seulement si on n'a pas encore élargi
-                        <div className="py-8">
-                            <button
-                                className="btn btn-sm"
-                                onClick={() => {
-                                    setVisibleCount(visibleCount + 3) // Augmente le nombre de projets visibles
-                                    setIsExpanded(true) // Change l'état à élargi
-                                }}
-                            >
-                                Afficher plus
-                            </button>
-                        </div>
-                    )}
             </div>
+            {isExpanded && (
+                <div className="py-12">
+                    <button
+                        className="btn"
+                        onClick={() => {
+                            setVisibleCount(3) // Réinitialise pour afficher uniquement les 3 premiers projets
+                            setIsExpanded(false) // Remet l'état à non élargi
+                        }}
+                    >
+                        Afficher moins
+                    </button>
+                </div>
+            )}
+            {visibleCount < projects.length && !isExpanded && (
+                <div className="py-12">
+                    <button
+                        className="btn"
+                        onClick={() => {
+                            setVisibleCount(visibleCount + 3) // Augmente le nombre de projets visibles
+                            setIsExpanded(true) // Change l'état à élargi
+                        }}
+                    >
+                        Afficher plus
+                    </button>
+                </div>
+            )}
         </section>
     )
 }

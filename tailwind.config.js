@@ -27,6 +27,7 @@ module.exports = {
             transparent: 'transparent',
             btnHover: '#e5e5e5',
             btnActive: '#c4c4ca',
+            text2: '#010101',
         },
 
         plugins: [],
