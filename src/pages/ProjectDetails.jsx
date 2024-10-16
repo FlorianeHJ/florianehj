@@ -1,18 +1,23 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import Img1 from '../assets/portfolio-img1.png'
+import Img2 from '../assets/portfolio-img2.png'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+import Nav from '../components/Nav'
 
 const projects = [
     {
         id: 1,
         name: 'Movie App',
         description: 'Une application pour chercher des films.',
-        images: ['image1.jpg', 'image2.jpg'], // Remplacez par vos vraies images
+        image: Img1,
     },
     {
         id: 2,
         name: 'Yoga App',
         description: 'Une application pour suivre vos séances de yoga.',
-        images: ['image3.jpg', 'image4.jpg'],
+        image: Img2,
     },
     // Ajoutez d'autres projets ici
 ]
@@ -21,17 +26,24 @@ const ProjectDetails = () => {
     const { projectId } = useParams()
     const project = projects.find((p) => p.id === parseInt(projectId))
 
-    if (!project) {
-        return <div>Projet non trouvé.</div>
-    }
-
     return (
         <div>
-            <h1>{project.name}</h1>
-            <p>{project.description}</p>
-            {project.images.map((image, index) => (
-                <img key={index} src={image} alt={project.name} />
-            ))}
+            <Nav />
+            <Header />
+            <section className="section flex flex-row justify-center items-center h-screen">
+                <div>
+                    <img
+                        className="w-1/2"
+                        src={project.image}
+                        alt={project.name}
+                    />
+                </div>
+                <div>
+                    <h1 className="h1">{project.name}</h1>
+                    <p>{project.description}</p>
+                </div>
+            </section>
+            <Footer />
         </div>
     )
 }

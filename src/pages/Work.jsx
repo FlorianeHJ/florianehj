@@ -17,6 +17,7 @@ const Work = () => {
     // Les projets à afficher
     const projects = [
         {
+            id: 1,
             img: Img1,
             alt: 'Screen shot du projet Movie App',
             name: 'Movie App',
@@ -24,6 +25,7 @@ const Work = () => {
             link: 'https://github.com/FlorianeHJ/Movie-App.git',
         },
         {
+            id: 2,
             img: Img2,
             alt: 'Screen shot du projet Yoga App',
             name: 'Yoga App',
@@ -31,6 +33,7 @@ const Work = () => {
             link: 'https://github.com/FlorianeHJ/Yoga-App.git',
         },
         {
+            id: 3,
             img: Img3,
             alt: 'Screen shot du projet Crypto Watch',
             name: 'Crypto Watch',
@@ -38,6 +41,7 @@ const Work = () => {
             link: 'https://github.com/FlorianeHJ/Crypto-watch.git',
         },
         {
+            id: 4,
             img: Img4,
             alt: 'Screen shot du projet Kasa',
             name: 'Kasa',
@@ -45,6 +49,7 @@ const Work = () => {
             link: 'https://github.com/FlorianeHJ/OC---kasa.git',
         },
         {
+            id: 5,
             img: Img5,
             alt: 'Screen shot du projet Nina Carducci',
             name: 'Nina Carducci',
@@ -52,6 +57,7 @@ const Work = () => {
             link: 'https://github.com/FlorianeHJ/OC---Nina-Carducci.git',
         },
         {
+            id: 6,
             img: Img6,
             alt: 'Screen shot du projet Booki',
             name: 'Booki',
@@ -112,21 +118,19 @@ const Work = () => {
 
             {/* Affichage des projets filtrés */}
             <div className="flex flex-row gap-10 flex-wrap justify-center">
-                {filteredProjects
-                    .slice(0, visibleCount)
-                    .map((project, index) => (
-                        <Link key={index} to={`/projects/${index + 1}`}>
-                            <Card
-                                img={project.img}
-                                alt={project.alt}
-                                name={project.name}
-                            >
-                                {project.tags.map((tag, index) => (
-                                    <Tag key={index} tech={tag} />
-                                ))}
-                            </Card>
-                        </Link>
-                    ))}
+                {filteredProjects.slice(0, visibleCount).map((project) => (
+                    <Link key={project.id} to={`/${project.id}`}>
+                        <Card
+                            img={project.img}
+                            alt={project.alt}
+                            name={project.name}
+                        >
+                            {project.tags.map((tag, index) => (
+                                <Tag key={index} tech={tag} />
+                            ))}
+                        </Card>
+                    </Link>
+                ))}
             </div>
             {isExpanded && (
                 <div className="py-12">

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { FaGithub, FaLinkedin, FaMailBulk } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import logo from '../assets/logo2.png'
 
 const Header = () => {
@@ -40,12 +41,13 @@ const Header = () => {
         >
             <div className="flex flex-row gap-10 justify-center items-center ">
                 <div className="md:w-18 sm:w-16 w-12">
-                    <a href="#home">
+                    <Link to="/">
                         <img
                             src={logo}
                             alt="Logo du portfolio avec la lettre F"
+                            id="#home"
                         />
-                    </a>
+                    </Link>
                 </div>
                 <div>
                     <div className="lg:max-w-[1100px] border-b  ">
