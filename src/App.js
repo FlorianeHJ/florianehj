@@ -6,6 +6,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Work from './pages/Work'
+import Path from './pages/Path'
 
 const App = () => {
     return (
@@ -14,6 +15,7 @@ const App = () => {
             <Header />
             <Home />
             <About />
+            <Path />
             <Work />
             <Contact />
             <Footer />

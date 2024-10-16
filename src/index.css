@@ -7,10 +7,10 @@
         @apply text-lg leading-8 text-text font-secondary;
     }
     .h2 {
-        @apply font-primary text-[32px] tracking-[20%] uppercase;
+        @apply font-primary font-bold md:text-5xl sm:text-3xl tracking-[20%] uppercase py-16;
     }
     .h3 {
-        @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+        @apply font-primary font-semibold md:text-3xl;
     }
     .btn {
         @apply font-primary text-text font-bold px-8 py-2 border-b  transition duration-200 ease-in-out text-2xl;
