@@ -71,6 +71,7 @@ const Header = () => {
                     <div className="flex text-3xl gap-x-6 max-w-max mx-auto">
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             href="https://www.linkedin.com/in/floriane-hurtebize-03218b119/"
                             className="transition-transform duration-200 hover:scale-125 hover:text-accent"
                         >
@@ -78,6 +79,7 @@ const Header = () => {
                         </a>
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             href="https://github.com/FlorianeHJ"
                             className="transition-transform duration-200 hover:scale-125 hover:text-accent"
                         >
@@ -85,6 +87,7 @@ const Header = () => {
                         </a>
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             href="mailto:fjulia.dev@gmail.com"
                             className="transition-transform duration-200 hover:scale-125 hover:text-accent"
                         >

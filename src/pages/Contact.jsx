@@ -20,14 +20,23 @@ const Contact = () => {
                 <div className="flex text-[40px] gap-x-6 mx-auto ">
                     <a
                         target="_blank"
+                        rel="noreferrer"
                         href="https://www.linkedin.com/in/floriane-hurtebize-03218b119/"
                     >
                         <FaLinkedin />
                     </a>
-                    <a target="_blank" href="https://github.com/FlorianeHJ">
+                    <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://github.com/FlorianeHJ"
+                    >
                         <FaGithub />
                     </a>
-                    <a target="_blank" href="mailto:fjulia.dev@gmail.com">
+                    <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="mailto:fjulia.dev@gmail.com"
+                    >
                         <FaMailBulk />
                     </a>
                 </div>

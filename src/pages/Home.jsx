@@ -69,7 +69,7 @@ const Home = () => {
                     <img
                         className="hidden md:block rounded-full backdrop-blur-md shadow-lg"
                         src={Image}
-                        alt="Photo de Floriane HJ"
+                        alt="Portrait de Floriane HJ"
                     />
                 </div>
             </section>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, FaMailBulk } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -9,17 +10,19 @@ const Footer = () => {
                 <span>
                     <a
                         target="_blank"
+                        rel="noreferrer"
                         href="https://www.linkedin.com/in/floriane-hurtebize-03218b119/"
                     >
                         Floriane HJ
                     </a>
                 </span>{' '}
-                <span className="italic">
-                    <a href="#">Mentions légales</a>
-                </span>
+                <Link to="/legalenotices">
+                    <span className="italic">Mentions légales</span>
+                </Link>
                 <a
                     className="text-[19px]"
                     target="_blank"
+                    rel="noreferrer"
                     href="https://www.linkedin.com/in/floriane-hurtebize-03218b119/"
                 >
                     <FaLinkedin />
@@ -27,6 +30,7 @@ const Footer = () => {
                 <a
                     className="text-[19px]"
                     target="_blank"
+                    rel="noreferrer"
                     href="https://github.com/FlorianeHJ"
                 >
                     <FaGithub />
@@ -34,6 +38,7 @@ const Footer = () => {
                 <a
                     className="text-[19px]"
                     target="_blank"
+                    rel="noreferrer"
                     href="mailto:fjulia.dev@gmail.com"
                 >
                     <FaMailBulk />
