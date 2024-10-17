@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import ImgGrimoire1 from '../assets/mon-vieux-grimoire/1.png'
 import Img1 from '../assets/portfolio-img1.png'
 import Img2 from '../assets/portfolio-img2.png'
 import Img3 from '../assets/portfolio-img3.png'
 import Img4 from '../assets/portfolio-img4.png'
 import Img5 from '../assets/portfolio-img5.png'
-import Img6 from '../assets/portfolio-img6.png'
+import ImgSB1 from '../assets/sophie-bluel/1.png'
 import Card from '../components/Card'
 import Tag from '../components/Tag'
 
@@ -55,11 +56,19 @@ const Work = () => {
         },
         {
             id: 6,
-            img: Img6,
-            alt: 'Screen shot du projet Booki',
-            name: 'Booki',
-            tags: ['HTML', 'CSS'],
-            link: 'https://github.com/FlorianeHJ/OC---Booki.git',
+            img: ImgGrimoire1,
+            alt: 'Screen shot du projet Mon vieux Grimoire',
+            name: 'Mon vieux Grimoire',
+            tags: ['Node.js', 'Express.js', 'MongoDB'],
+            link: 'https://github.com/FlorianeHJ/OC---Grimoire.git',
+        },
+        {
+            id: 7,
+            img: ImgSB1,
+            alt: 'Screen shot du projet Sophie Bluel',
+            name: 'Sophie Bluel',
+            tags: ['Javascript', 'CSS', 'HTML'],
+            link: 'https://github.com/FlorianeHJ/OC---Sophie-Bluel.git',
         },
     ]
 
@@ -147,7 +156,7 @@ const Work = () => {
                     <button
                         className="btn"
                         onClick={() => {
-                            setVisibleCount(visibleCount + 3) // Augmente le nombre de projets visibles
+                            setVisibleCount(projects.length) // Augmente le nombre de projets visibles
                             setIsExpanded(true) // Change l'état à élargi
                         }}
                     >

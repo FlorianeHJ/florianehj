@@ -5,12 +5,10 @@ const Contact = () => {
     return (
         <section
             id="contact"
-            className="section h-screen mx-auto flex-1 flex flex-col justify-center items-center"
+            className="section py-8 mx-auto flex-1 flex flex-col justify-center items-center"
         >
             <div className="flex-1 flex flex-col justify-center items-center ">
-                <h2 className="h2 text-4xl uppercase text-accent pt-10">
-                    Travaillons ensemble !
-                </h2>
+                <h2 className="h2  text-accent">Travaillons ensemble !</h2>
                 <h3 className="text-[35px]">
                     Je suis disponible dès Janvier 2025
                 </h3>

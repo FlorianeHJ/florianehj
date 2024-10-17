@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaDownload } from 'react-icons/fa6'
 import { TypeAnimation } from 'react-type-animation'
 import Image from '../assets/profil4.png'
 import Footer from '../components/Footer'
@@ -58,10 +59,12 @@ const Home = () => {
                     </p>
                     <div className="flex max-w-max gap-x-6 items-center  ">
                         <a href="#contact">
-                            <button className="btn btn-lg">
-                                Contactez moi
-                            </button>
+                            <button className="btn">Contactez moi</button>
                         </a>
+                        <button className="btn flex flex-row gap-4 items-center">
+                            <FaDownload className="text-lg" />
+                            CV
+                        </button>
                     </div>
                 </div>
                 {/* {image} */}

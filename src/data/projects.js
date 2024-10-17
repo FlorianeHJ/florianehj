@@ -1,9 +1,11 @@
 // src/data/projects.js
+import ImgGrimoire1 from '../assets/mon-vieux-grimoire/1.png'
 import Img1 from '../assets/portfolio-img1.png'
 import Img2 from '../assets/portfolio-img2.png'
 import Img3 from '../assets/portfolio-img3.png'
 import Img4 from '../assets/portfolio-img4.png'
 import Img5 from '../assets/portfolio-img5.png'
+import ImgSB1 from '../assets/sophie-bluel/1.png'
 
 const projects = [
     {
@@ -101,14 +103,92 @@ const projects = [
         name: 'Nina Carducci',
         image: Img5,
         link1: 'https://github.com/FlorianeHJ/OC---Nina-Carducci',
-        description: `Ce projet consiste à remettre à neuf un site web existant en améliorant son SEO (optimisation pour les moteurs de recherche) et son accessibilité. Plusieurs aspects techniques ont été pris en charge, incluant la correction de bugs, l'optimisation des performances, ainsi que des améliorations SEO techniques et locales.`,
+        description: `Ce projet consistait à remettre à neuf un site web existant en améliorant son SEO (optimisation pour les moteurs de recherche) et son accessibilité. Plusieurs aspects techniques ont été pris en charge, incluant la correction de bugs, l'optimisation des performances, ainsi que des améliorations SEO techniques et locales.`,
         aims: [
-            `Affichage de l'ensemble des appartements: Affichage sur la page d'accueil l'ensemble des location disponible`,
-            `Détails de chaque appartement : Hôte, lieu, équipements, évaluations...`,
-            `Mise en place d'un slideshow pour chaque location`,
-            `Mise en place de collapse pour les équipements`,
+            `Débuggage du site : Correction des erreurs techniques pour améliorer la stabilité du site.`,
+            `Optimisation des performances : Amélioration des temps de chargement, notamment en utilisant des outils comme Google Lighthouse pour identifier les opportunités d'amélioration.`,
+            `Optimisation SEO technique : Mise en place des meilleures pratiques SEO, telles que la gestion des balises meta.`,
+            `Référencement local et réseaux sociaux : Ajout de données pour améliorer le référencement local et l'intégration des réseaux sociaux (Open Graph, Twitter Cards).`,
+            `Correction de l'accessibilité : Mise en conformité avec les normes d'accessibilité, en utilisant des outils comme l'extension Chrome WAVE et Google Lighthouse.`,
         ],
-        techFront: ['React', 'React Router DOM', 'SASS'],
+        techFront: ['Bootstrap', 'Google Lighthouse', 'WAVE'],
+        back: null,
+    },
+    {
+        id: 6,
+        name: 'Mon vieux Grimoire',
+        image: ImgGrimoire1,
+        link1: 'https://github.com/FlorianeHJ/OC---Grimoire',
+        description:
+            '"Mon Vieux Grimoire" est un site de référencement et de notation de livres, développé pour la librairie "Au Vieux Grimoire", qui permet aux utilisateurs de créer des livres, de les noter et de consulter les ouvrages existants ainsi que leurs évaluations.',
+        aims: [
+            `Inscription / Connexion : Les utilisateurs peuvent s'inscrire ou se connecter pour interagir avec la plateforme.`,
+            `Page d'accueil : Présente tous les livres ajoutés par les utilisateurs, avec leurs titres et images.`,
+            `Page livre : Affiche les détails d'un livre spécifique (image, titre, auteur, année, genre, et note moyenne).`,
+            `Noter les livres : Les utilisateurs peuvent attribuer une note entre 0 et 5 étoiles à un livre.`,
+            `Ajouter un livre : Les utilisateurs connectés peuvent ajouter de nouveaux livres avec des champs pour l'image, le titre, l'auteur, l'année, et le genre.`,
+            `Gestion des livres : Le créateur d'un livre peut le modifier ou le supprimer.`,
+        ],
+        techFront: [
+            'React',
+            'React Router',
+            'React Hook Form',
+            'Axios',
+            'Fontawesome',
+        ],
+        back: {
+            aimsBack: [
+                `Inscription d'utilisateur : Les utilisateurs peuvent s'inscrire en fournissant un email et un mot de passe, qui est haché avant d'être stocké.`,
+
+                `Connexion utilisateur : Un utilisateur peut se connecter en fournissant ses identifiants, et reçoit un token JWT en cas de succès.`,
+
+                `Middleware d'authentification : Les routes sensibles sont protégées par un middleware qui vérifie la validité du token JWT.`,
+
+                `Ajout d'un livre : Les utilisateurs peuvent ajouter un livre avec des informations telles que le titre, l'auteur et une image de couverture.`,
+
+                `Modification d'un livre : Un utilisateur peut modifier les détails d'un livre qu'il a ajouté, y compris le titre, l'auteur et l'image.`,
+
+                `Suppression d'un livre : Un utilisateur peut supprimer un livre de la base de données.`,
+
+                `Récupération de tous les livres : Tous les livres enregistrés peuvent être récupérés via une route dédiée.`,
+
+                `Récupération d'un livre : Un utilisateur peut consulter les détails d'un livre spécifique en utilisant son identifiant.`,
+
+                `Ajout d'une note : Un utilisateur peut laisser une note sur un livre.`,
+
+                `Téléchargement d'image : Les images téléchargées, comme les couvertures de livres, sont redimensionnées et optimisées avant d'être stockées.`,
+
+                `Protection contre les attaques par force brute : Le backend limite le nombre de requêtes par IP pour empêcher les attaques par force brute.`,
+            ],
+            techBack: [
+                'Node.js',
+                'Express.js',
+                'MongoDB',
+                'Mongoose',
+                'dotenv',
+                'express-rate-limit',
+                'JWT',
+                'bcrypt',
+                'multer',
+                'sharp',
+                'uuid',
+            ],
+        },
+    },
+    {
+        id: 7,
+        name: 'Portfolio - Sophie Bluel',
+        image: ImgSB1,
+        link1: 'https://github.com/FlorianeHJ/OC---Sophie-Bluel.git',
+        description: `Site vitrine pour une photographe, Sophie Bluel, permettant de présenter ses travaux et de gérer ses photos via une interface d'administration (ajouter ou supprimer une photo).`,
+        aims: [
+            `Page de Présentation : Affiche les travaux de la photographe avec une interface conviviale.`,
+            `Page de Connexion : Permet à l'administrateur de se connecter en tant qu'administrateur.`,
+
+            `Modale de modification : Offre la possibilité d'ajouter de nouvelles photos, ou de supprimer des photos existantes.`,
+            `Mise à jour de la page d'accueil après ajout ou suppression des oeuvres via la modale.`,
+        ],
+        techFront: ['javascript', 'CSS', 'HTML'],
         back: null,
     },
 ]
