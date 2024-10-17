@@ -22,7 +22,6 @@ const Work = () => {
             alt: 'Screen shot du projet Movie App',
             name: 'Movie App',
             tags: ['React', 'SASS', 'Axios'],
-            link: 'https://github.com/FlorianeHJ/Movie-App.git',
         },
         {
             id: 2,
@@ -30,7 +29,6 @@ const Work = () => {
             alt: 'Screen shot du projet Yoga App',
             name: 'Yoga App',
             tags: ['React', 'Tailwind', 'Node.JS', 'MongoDB'],
-            link: 'https://github.com/FlorianeHJ/Yoga-App.git',
         },
         {
             id: 3,
@@ -38,7 +36,6 @@ const Work = () => {
             alt: 'Screen shot du projet Crypto Watch',
             name: 'Crypto Watch',
             tags: ['React', 'SASS', 'Axios', 'Redux'],
-            link: 'https://github.com/FlorianeHJ/Crypto-watch.git',
         },
         {
             id: 4,

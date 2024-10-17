@@ -69,7 +69,7 @@ const ProjectDetails = () => {
                             Front-End
                         </h2>
                         <p className="py-3 text-base shadow-sm">
-                            Les technologies utilisées pour l'application :
+                            Les outils utilisés :
                         </p>
                         <ul className="list-none mt-4">
                             {project.techFront.map((tech, index) => (
@@ -117,8 +117,7 @@ const ProjectDetails = () => {
                             project.back.techBack.length > 0 && (
                                 <div>
                                     <p className="py-3 text-base shadow-sm">
-                                        Les technologies utilisées pour
-                                        l'application :
+                                        Les outils utilisés :
                                     </p>
                                     <ul className="list-none mt-4">
                                         {project.back.techBack.map(

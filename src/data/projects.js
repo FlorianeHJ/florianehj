@@ -1,6 +1,9 @@
 // src/data/projects.js
 import Img1 from '../assets/portfolio-img1.png'
 import Img2 from '../assets/portfolio-img2.png'
+import Img3 from '../assets/portfolio-img3.png'
+import Img4 from '../assets/portfolio-img4.png'
+import Img5 from '../assets/portfolio-img5.png'
 
 const projects = [
     {
@@ -55,6 +58,58 @@ const projects = [
                 'dotenv',
             ],
         },
+    },
+    {
+        id: 3,
+        name: 'Crypto Watch',
+        image: Img3,
+        link1: 'https://github.com/FlorianeHJ/Crypto-watch.git',
+        description: `Crypto-Watch est une application web qui permet de suivre en temps réel l'évolution des cryptomonnaies avec des graphiques interactifs et des options de filtrage. L'application offre la possibilité de trier les cryptomonnaies selon plusieurs critères (comme les performances par période) et est construite avec React et Redux pour une gestion efficace de l'état.`,
+        aims: [
+            `Mise à jour en temps réel : Suivez les fluctuations des cryptomonnaies presque en direct.`,
+            `Graphiques interactifs : Visualisez les données à l'aide de graphiques élégants (via recharts).`,
+            `Filtrage des données : Trier les cryptomonnaies avec ou sans "Table Coin", trier les performances par fréquence/période.`,
+            `Gestion de l'état avec Redux : Utilisation de @reduxjs/toolkit et react-redux pour une gestion centralisée de l'état.`,
+            `Stylisation : Le projet utilise Sass pour les styles avancés.`,
+        ],
+        techFront: [
+            'React',
+            'Redux & Redux ToolKit',
+            'Axios',
+            'Recharts',
+            'SASS',
+        ],
+        back: null,
+    },
+    {
+        id: 4,
+        name: 'Kasa',
+        image: Img4,
+        link1: 'https://github.com/FlorianeHJ/OC---kasa.git',
+        description: `Kasa est une application web qui permet aux utilisateurs de consulter différentes locations d'appartements. Chaque appartement est présenté avec des détails complets, y compris des informations sur l'hôte, un carroussel de photos, le lieu, les équipements disponibles et les notes attribuées par les utilisateurs.`,
+        aims: [
+            `Affichage de l'ensemble des appartements: Affichage sur la page d'accueil l'ensemble des location disponible`,
+            `Détails de chaque appartement : Hôte, lieu, équipements, évaluations...`,
+            `Mise en place d'un slideshow pour chaque location`,
+            `Mise en place de collapse pour les équipements`,
+        ],
+        techFront: ['React', 'React Router DOM', 'SASS'],
+        back: null,
+    },
+    {
+        id: 5,
+        name: 'Nina Carducci',
+        image: Img5,
+        link1: 'https://github.com/FlorianeHJ/OC---Nina-Carducci',
+        description: `Ce projet consiste à remettre à neuf un site web existant en améliorant son SEO (optimisation pour les moteurs de recherche) et son accessibilité. Plusieurs aspects techniques ont été pris en charge, incluant la correction de bugs, l'optimisation des performances, ainsi que des améliorations SEO techniques et locales.`,
+        aims: [
+            `Affichage de l'ensemble des appartements: Affichage sur la page d'accueil l'ensemble des location disponible`,
+            `Détails de chaque appartement : Hôte, lieu, équipements, évaluations...`,
+            `Mise en place d'un slideshow pour chaque location`,
+            `Mise en place de collapse pour les équipements`,
+        ],
+        techFront: ['React', 'React Router DOM', 'SASS'],
+        back: null,
     },
 ]
 
