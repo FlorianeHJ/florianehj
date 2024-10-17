@@ -41,11 +41,20 @@ const Header = () => {
         >
             <div className="flex flex-row gap-10 justify-center items-center ">
                 <div className="md:w-18 sm:w-16 w-12">
-                    <Link to="/">
+                    <Link
+                        to="/"
+                        onClick={() => {
+                            const homeSection = document.querySelector('#home')
+                            if (homeSection) {
+                                homeSection.scrollIntoView({
+                                    behavior: 'smooth',
+                                })
+                            }
+                        }}
+                    >
                         <img
                             src={logo}
                             alt="Logo du portfolio avec la lettre F"
-                            id="#home"
                         />
                     </Link>
                 </div>
