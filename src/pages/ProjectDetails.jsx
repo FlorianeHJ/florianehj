@@ -55,7 +55,7 @@ const ProjectDetails = () => {
                     {project.aims.map((aim, index) => (
                         <li
                             key={index}
-                            className="flex items-start mb-4 text-lg text-gray-300 hover:text-white transition-transform duration-300 hover:scale-105"
+                            className="flex items-center mb-2 text-base text-gray-300 hover:text-white transition-transform duration-300 hover:scale-105"
                         >
                             <BsCheckCircle className="text-btnActive mr-2" />
                             {aim}
@@ -75,7 +75,7 @@ const ProjectDetails = () => {
                             {project.techFront.map((tech, index) => (
                                 <li
                                     key={index}
-                                    className="flex items-start mb-4 text-lg text-gray-300 hover:text-white transition-transform duration-300 hover:scale-105"
+                                    className="flex items-center mb-2 text-base text-gray-300 hover:text-white transition-transform duration-300 hover:scale-105"
                                 >
                                     <BsCheckCircle className="text-btnActive mr-2" />
                                     {tech}
@@ -102,7 +102,7 @@ const ProjectDetails = () => {
                                             (aim, index) => (
                                                 <li
                                                     key={index}
-                                                    className="flex items-start mb-4 text-lg text-gray-300 hover:text-white transition-transform duration-300 hover:scale-105"
+                                                    className="flex items-center mb-2 text-base text-gray-300 hover:text-white transition-transform duration-300 hover:scale-105"
                                                 >
                                                     <BsCheckCircle className="text-btnActive mr-2" />
                                                     {aim}
@@ -124,7 +124,7 @@ const ProjectDetails = () => {
                                             (tech, index) => (
                                                 <li
                                                     key={index}
-                                                    className="flex items-start mb-4 text-lg text-gray-300 hover:text-white transition-transform duration-300 hover:scale-105"
+                                                    className="flex items-center  mb-2 text-base text-gray-300 hover:text-white transition-transform duration-300 hover:scale-105"
                                                 >
                                                     <BsCheckCircle className="text-btnActive mr-2" />
                                                     {tech}

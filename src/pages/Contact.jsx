@@ -23,7 +23,7 @@ const Contact = () => {
                     Disponible pour rejoindre votre équipe dès Janvier 2025
                 </h3>
             </div>
-            <p className="text-xl">
+            <p className="text-lg">
                 Je suis à votre disposition sur LinkedIn, GitHub, par email ou
                 par téléphone. 💻{' '}
             </p>

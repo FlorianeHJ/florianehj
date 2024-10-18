@@ -10,10 +10,10 @@ const About = () => {
                 </h2>
                 <div className="flex flex-col md:flex-row gap-16 py-3">
                     <div>
-                        <h3 className="h3 pb-10 text-center">
+                        <h3 className="h3 text-center">
                             Partir d'une expertise hôtelière...
                         </h3>
-                        <p className="text-base sm:text-xl mb-6 text-justify">
+                        <p className="text-base sm:text-lg text-justify">
                             Après avoir passé plusieurs années à arpenter les
                             couloirs des hôtels 4*, à accueillir des clients
                             avec le sourire et à gérer des équipes avec
@@ -35,10 +35,10 @@ const About = () => {
                         </p>
                     </div>
                     <div>
-                        <h3 className="h3 pb-10 text-center">
+                        <h3 className="h3 text-center">
                             ... pour coder et programmer !
                         </h3>
-                        <p className=" text-base sm:text-xl mb-6 text-justify">
+                        <p className=" text-base sm:text-lg text-justify">
                             Et un jour, j'ai voulu aller plus loin : créer un
                             site web dynamique pour mon entreprise de cuisine.
                             C’est là que la magie a opéré : j’ai re-découvert le

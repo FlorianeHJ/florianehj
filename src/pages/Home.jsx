@@ -49,15 +49,15 @@ const Home = () => {
                 <div className=" flex flex-row justify-center gap-20 items-center text-end font-primary  ">
                     <div>
                         {' '}
-                        <h1 className="text-[45px] sm:text-[60px] font-bold leading-[1] uppercase">
+                        <h1 className="text-3xl sm:text-5xl font-bold leading-[1] uppercase">
                             Développeuse Web
-                            <span className="text-[55px] sm:text-[70px] text-accent">
+                            <span className="text-4xl sm:text-6xl text-accent">
                                 {' '}
                                 React
                             </span>
                         </h1>
-                        <div className="hidden md:block text-[45px] font-primary font-semibold uppercase leading-[2]">
-                            <span className=" text-white mr-4">Je suis</span>
+                        <div className="hidden md:block text-4xl font-primary font-semibold uppercase leading-[2]">
+                            <span> Je suis</span>
                             <TypeAnimation
                                 sequence={[
                                     'Floriane HJ',
@@ -82,7 +82,7 @@ const Home = () => {
                         />
                     </div>
                 </div>
-                <p className="md:text-2xl text-xl py-2 w-11/12 font-secondary text-center ">
+                <p className="md:text-xl text-lg w-11/12 font-secondary text-center ">
                     Développeuse web front-end <strong>passionnée</strong>,
                     spécialisée en <strong>React</strong> et{' '}
                     <strong>Tailwind CSS</strong>, j'ai réalisé plusieurs

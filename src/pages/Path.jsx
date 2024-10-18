@@ -37,7 +37,7 @@ const Path = () => {
                                     {name}
                                 </h4>
 
-                                <p className="font-secondary leading-tight text-md">
+                                <p className="font-secondary leading-tight text-base">
                                     {description}
                                 </p>
                             </div>

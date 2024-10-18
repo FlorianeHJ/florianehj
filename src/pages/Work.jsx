@@ -109,7 +109,7 @@ const Work = () => {
                     <button
                         key={index}
                         onClick={() => handleTagClick(tag)}
-                        className={`btn px-4 py-2 text-base font-secondary ${
+                        className={`btn px-3 py-1 text-sm font-secondary ${
                             selectedTag === null && tag === 'Tous'
                                 ? 'shadow-md translate-y-[2px] border-transparent'
                                 : selectedTag === tag
