@@ -54,6 +54,7 @@ const Header = () => {
                     >
                         <img
                             src={logo}
+                            className="transition-transform duration-300 hover:scale-125"
                             alt="Logo du portfolio avec la lettre F"
                         />
                     </Link>

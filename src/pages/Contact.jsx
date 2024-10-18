@@ -28,7 +28,7 @@ const Contact = () => {
                 par téléphone. 💻{' '}
             </p>
             <div className="flex flex-row w-full justify-center items-center">
-                <div className="flex text-4xl gap-10 py-20 justify-center items-center ">
+                <div className="flex text-4xl gap-10 py-16 justify-center items-center ">
                     <a
                         target="_blank"
                         rel="noreferrer"
@@ -73,7 +73,7 @@ const Contact = () => {
             </div>
             <button
                 onClick={handleOpenPDF}
-                className="btn flex flex-row gap-4 items-center"
+                className="btn flex flex-row gap-4 mb-10 items-center"
             >
                 <FaDownload className="text-lg" />
                 CV
