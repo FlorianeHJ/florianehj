@@ -20,25 +20,25 @@ const Footer = () => {
                     <span className="italic">Mentions légales</span>
                 </Link>
                 <a
-                    className="text-[19px]"
                     target="_blank"
                     rel="noreferrer"
+                    className="transition-transform duration-200 hover:scale-125 hover:text-accent"
                     href="https://www.linkedin.com/in/floriane-hurtebize-03218b119/"
                 >
                     <FaLinkedin />
                 </a>
                 <a
-                    className="text-[19px]"
                     target="_blank"
                     rel="noreferrer"
+                    className="transition-transform duration-200 hover:scale-125 hover:text-accent"
                     href="https://github.com/FlorianeHJ"
                 >
                     <FaGithub />
                 </a>
                 <a
-                    className="text-[19px]"
                     target="_blank"
                     rel="noreferrer"
+                    className="transition-transform duration-200 hover:scale-125 hover:text-accent"
                     href="mailto:fjulia.dev@gmail.com"
                 >
                     <FaMailBulk />

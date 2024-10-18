@@ -22,7 +22,7 @@ const experience = [
 
 const Path = () => {
     return (
-        <section className="section bg-background1 py-8">
+        <section className="section bg-background1 pb-20">
             <h2 className="h2 text-accent text-center ">Mon parcours</h2>
             <div className="flex-1 flex flex-col items-center justify-center">
                 {experience.map((exp, index) => {

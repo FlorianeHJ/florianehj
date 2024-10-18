@@ -7,9 +7,14 @@ import Header from '../components/Header'
 import Nav from '../components/Nav'
 import About from './About'
 import Contact from './Contact'
+import Path from './Path'
 import Work from './Work'
 
 const Home = () => {
+    const handleOpenPDF = () => {
+        window.open('/cv_floriane_hurtebize_2024.pdf', '_blank')
+    }
+
     return (
         <div>
             <Nav />
@@ -61,7 +66,10 @@ const Home = () => {
                         <a href="#contact">
                             <button className="btn">Contactez moi</button>
                         </a>
-                        <button className="btn flex flex-row gap-4 items-center">
+                        <button
+                            onClick={handleOpenPDF}
+                            className="btn flex flex-row gap-4 items-center"
+                        >
                             <FaDownload className="text-lg" />
                             CV
                         </button>
@@ -78,6 +86,7 @@ const Home = () => {
             </section>
             <About />
             <Work />
+            <Path />
             <Contact />
             <Footer />
         </div>

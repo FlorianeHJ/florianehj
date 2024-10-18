@@ -1,24 +1,38 @@
 import React from 'react'
-import { FaGithub, FaLinkedin, FaMailBulk } from 'react-icons/fa'
+import {
+    FaGithub,
+    FaLinkedin,
+    FaMailBulk,
+    FaPhone,
+    FaWhatsapp,
+} from 'react-icons/fa'
+import { FaDownload } from 'react-icons/fa6'
 
 const Contact = () => {
+    const handleOpenPDF = () => {
+        window.open('/cv_floriane_hurtebize_2024.pdf', '_blank')
+    }
     return (
         <section
             id="contact"
-            className="section py-8 mx-auto flex-1 flex flex-col justify-center items-center"
+            className="section pb-20 mx-auto flex-1 flex flex-col justify-center items-center bg-background2"
         >
             <div className="flex-1 flex flex-col justify-center items-center ">
-                <h2 className="h2  text-accent">Travaillons ensemble !</h2>
-                <h3 className="text-[35px]">
-                    Je suis disponible dès Janvier 2025
+                <h2 className="h2">Travaillons ensemble !</h2>
+                <h3 className="h3">
+                    Disponible pour rejoindre votre équipe dès Janvier 2025
                 </h3>
             </div>
-            <div className="flex flex-col w-full items-center">
-                <h4>Contactez moi via</h4>
-                <div className="flex text-[40px] gap-x-6 mx-auto ">
+            <p className="text-xl">
+                Je suis à votre disposition sur LinkedIn, GitHub, par email ou
+                par téléphone. 💻{' '}
+            </p>
+            <div className="flex flex-row w-full justify-center items-center">
+                <div className="flex text-4xl gap-10 py-20 justify-center items-center ">
                     <a
                         target="_blank"
                         rel="noreferrer"
+                        className="transition-transform duration-200 hover:scale-125 hover:text-accent"
                         href="https://www.linkedin.com/in/floriane-hurtebize-03218b119/"
                     >
                         <FaLinkedin />
@@ -26,6 +40,7 @@ const Contact = () => {
                     <a
                         target="_blank"
                         rel="noreferrer"
+                        className="transition-transform duration-200 hover:scale-125 hover:text-accent"
                         href="https://github.com/FlorianeHJ"
                     >
                         <FaGithub />
@@ -33,37 +48,36 @@ const Contact = () => {
                     <a
                         target="_blank"
                         rel="noreferrer"
+                        className="transition-transform duration-200 hover:scale-125 hover:text-accent"
                         href="mailto:fjulia.dev@gmail.com"
                     >
                         <FaMailBulk />
                     </a>
+                    <a
+                        target="_blank"
+                        rel="noreferrer"
+                        className="transition-transform duration-200 hover:scale-125 hover:text-accent"
+                        href="tel:+33612216315"
+                    >
+                        <FaPhone />
+                    </a>
+                    <a
+                        target="_blank"
+                        rel="noreferrer"
+                        className="transition-transform duration-200 hover:scale-125 hover:text-accent"
+                        href="https://wa.me/+33612216315"
+                    >
+                        <FaWhatsapp />
+                    </a>
                 </div>
-
-                <h4>Ou via ce formulaire</h4>
-                <form className="flex flex-col gap-y-6 py-10 w-2/3">
-                    <label
-                        for="Username"
-                        class="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
-                    ></label>
-                    <input
-                        className="border rounded-lg p-2 outline-none w-full transition-all text-secondary"
-                        type="text"
-                        placeholder="Your name"
-                    />
-                    <input
-                        className="border rounded-lg p-2 outline-none w-full transition-all text-secondary"
-                        type="text"
-                        placeholder="Your email"
-                    />
-                    <textarea
-                        className="border rounded-lg p-2 outline-none w-full transition-all text-secondary resize-none"
-                        placeholder="Your message"
-                    ></textarea>
-                    <div className="flex justify-center">
-                        <button className="btn btn-sm">Envoyer</button>
-                    </div>
-                </form>
             </div>
+            <button
+                onClick={handleOpenPDF}
+                className="btn flex flex-row gap-4 items-center"
+            >
+                <FaDownload className="text-lg" />
+                CV
+            </button>
         </section>
     )
 }

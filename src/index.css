@@ -10,7 +10,7 @@
         @apply font-primary font-bold md:text-5xl sm:text-3xl tracking-[20%] uppercase py-16 text-accent;
     }
     .h3 {
-        @apply font-primary font-semibold md:text-3xl;
+        @apply font-primary font-semibold md:text-3xl pb-10;
     }
     .btn {
         @apply font-primary text-text font-bold px-8 py-2 border-b  transition duration-200 ease-in-out text-2xl;
