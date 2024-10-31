@@ -44,6 +44,7 @@ const Path = () => {
                             <div className="flex items-center">
                                 <a
                                     target="_blank"
+                                    rel="noreferrer"
                                     href="https://www.linkedin.com/in/floriane-hurtebize-03218b119/"
                                     className="btn hidden lg:block text-sm px-2 border-b-transparent"
                                 >

@@ -57,7 +57,7 @@ const Home = () => {
                             </span>
                         </h1>
                         <div className="hidden md:block text-4xl font-primary font-semibold uppercase leading-[2]">
-                            <span> Je suis</span>
+                            <span> Je suis </span>
                             <TypeAnimation
                                 sequence={[
                                     'Floriane HJ',
