@@ -1,34 +1,17 @@
 // src/data/projects.js
+import ImgCW1 from '../assets/crypto-tower/1.png'
+import ImgKasa1 from '../assets/kasa/1.png'
 import ImgGrimoire1 from '../assets/mon-vieux-grimoire/1.png'
-import Img1 from '../assets/portfolio-img1.png'
-import Img2 from '../assets/portfolio-img2.png'
-import Img3 from '../assets/portfolio-img3.png'
-import Img4 from '../assets/portfolio-img4.png'
-import Img5 from '../assets/portfolio-img5.png'
+import ImgMovie1 from '../assets/movie-app/1.png'
+import ImgNC1 from '../assets/nina-carducci/1.png'
 import ImgSB1 from '../assets/sophie-bluel/1.png'
+import ImgYoga1 from '../assets/Yoga Timer/1.png'
 
 const projects = [
     {
         id: 1,
-        name: 'Movie App',
-        image: Img1,
-        link1: 'https://github.com/FlorianeHJ/Movie-App.git',
-
-        description: `Movie-App est une application web permettant de consulter un large catalogue de films. Les utilisateurs peuvent naviguer dans les films, les filtrer selon plusieurs critères, et ajouter des films à leurs favoris ou coups de cœur.`,
-        aims: [
-            `Affichage de 20 films à la fois, avec un système de pagination dynamique.`,
-            `Filtrage des films selon différents critères (genre, année, popularité, etc.)`,
-            `Possibilité de marquer des films comme coups de cœur.`,
-            `Navigation facile grâce à react-router-dom.`,
-        ],
-        techFront: ['React', 'Axios', 'React Router', 'SASS'],
-        back: null,
-    },
-
-    {
-        id: 2,
         name: 'Yoga Timer',
-        image: Img2,
+        image: ImgYoga1,
         link1: 'https://github.com/FlorianeHJ/Yoga-App.git',
         description:
             'Yoga Timer est une application conçue pour accompagner les utilisateurs dans leur séance de Yoga.',
@@ -62,9 +45,25 @@ const projects = [
         },
     },
     {
+        id: 2,
+        name: 'Movie App',
+        image: ImgMovie1,
+        link1: 'https://github.com/FlorianeHJ/Movie-App.git',
+
+        description: `Movie-App est une application web permettant de consulter un large catalogue de films. Les utilisateurs peuvent naviguer dans les films, les filtrer selon plusieurs critères, et ajouter des films à leurs favoris ou coups de cœur.`,
+        aims: [
+            `Affichage de 20 films à la fois, avec un système de pagination dynamique.`,
+            `Filtrage des films selon différents critères (genre, année, popularité, etc.)`,
+            `Possibilité de marquer des films comme coups de cœur.`,
+            `Navigation facile grâce à react-router-dom.`,
+        ],
+        techFront: ['React', 'Axios', 'React Router', 'SASS'],
+        back: null,
+    },
+    {
         id: 3,
         name: 'Crypto Watch',
-        image: Img3,
+        image: ImgCW1,
         link1: 'https://github.com/FlorianeHJ/Crypto-watch.git',
         description: `Crypto-Watch est une application web qui permet de suivre en temps réel l'évolution des cryptomonnaies avec des graphiques interactifs et des options de filtrage. L'application offre la possibilité de trier les cryptomonnaies selon plusieurs critères (comme les performances par période) et est construite avec React et Redux pour une gestion efficace de l'état.`,
         aims: [
@@ -86,7 +85,7 @@ const projects = [
     {
         id: 4,
         name: 'Kasa',
-        image: Img4,
+        image: ImgKasa1,
         link1: 'https://github.com/FlorianeHJ/OC---kasa.git',
         description: `Kasa est une application web qui permet aux utilisateurs de consulter différentes locations d'appartements. Chaque appartement est présenté avec des détails complets, y compris des informations sur l'hôte, un carroussel de photos, le lieu, les équipements disponibles et les notes attribuées par les utilisateurs.`,
         aims: [
@@ -101,7 +100,7 @@ const projects = [
     {
         id: 5,
         name: 'Nina Carducci',
-        image: Img5,
+        image: ImgNC1,
         link1: 'https://github.com/FlorianeHJ/OC---Nina-Carducci',
         description: `Ce projet consistait à remettre à neuf un site web existant en améliorant son SEO (optimisation pour les moteurs de recherche) et son accessibilité. Plusieurs aspects techniques ont été pris en charge, incluant la correction de bugs, l'optimisation des performances, ainsi que des améliorations SEO techniques et locales.`,
         aims: [

@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import ImgCW1 from '../assets/crypto-tower/1.png'
+import ImgKasa1 from '../assets/kasa/1.png'
 import ImgGrimoire1 from '../assets/mon-vieux-grimoire/1.png'
-import Img1 from '../assets/portfolio-img1.png'
-import Img2 from '../assets/portfolio-img2.png'
-import Img3 from '../assets/portfolio-img3.png'
-import Img4 from '../assets/portfolio-img4.png'
-import Img5 from '../assets/portfolio-img5.png'
+import ImgMovie1 from '../assets/movie-app/1.png'
+import ImgNC1 from '../assets/nina-carducci/1.png'
 import ImgSB1 from '../assets/sophie-bluel/1.png'
+import ImgYoga1 from '../assets/Yoga Timer/1.png'
 import Card from '../components/Card'
 import Tag from '../components/Tag'
 
@@ -19,28 +19,29 @@ const Work = () => {
     const projects = [
         {
             id: 1,
-            img: Img1,
-            alt: 'Screen shot du projet Movie App',
-            name: 'Movie App',
-            tags: ['React', 'SASS', 'Axios'],
-        },
-        {
-            id: 2,
-            img: Img2,
+            img: ImgYoga1,
             alt: 'Screen shot du projet Yoga App',
             name: 'Yoga App',
             tags: ['React', 'Tailwind', 'Node.JS', 'MongoDB'],
         },
         {
+            id: 2,
+            img: ImgMovie1,
+            alt: 'Screen shot du projet Movie App',
+            name: 'Movie App',
+            tags: ['React', 'SASS', 'Axios'],
+        },
+
+        {
             id: 3,
-            img: Img3,
+            img: ImgCW1,
             alt: 'Screen shot du projet Crypto Watch',
             name: 'Crypto Watch',
             tags: ['React', 'SASS', 'Axios', 'Redux'],
         },
         {
             id: 4,
-            img: Img4,
+            img: ImgKasa1,
             alt: 'Screen shot du projet Kasa',
             name: 'Kasa',
             tags: ['React', 'SASS'],
@@ -48,7 +49,7 @@ const Work = () => {
         },
         {
             id: 5,
-            img: Img5,
+            img: ImgNC1,
             alt: 'Screen shot du projet Nina Carducci',
             name: 'Nina Carducci',
             tags: ['SEO', 'Accessibilité', 'WAVE'],

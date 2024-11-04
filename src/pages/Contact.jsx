@@ -34,6 +34,7 @@ const Contact = () => {
                         rel="noreferrer"
                         className="transition-transform duration-200 hover:scale-125 hover:text-accent"
                         href="https://www.linkedin.com/in/floriane-hurtebize-03218b119/"
+                        title="LinkedIn"
                     >
                         <FaLinkedin />
                     </a>
@@ -42,6 +43,7 @@ const Contact = () => {
                         rel="noreferrer"
                         className="transition-transform duration-200 hover:scale-125 hover:text-accent"
                         href="https://github.com/FlorianeHJ"
+                        title="Github"
                     >
                         <FaGithub />
                     </a>
@@ -50,6 +52,7 @@ const Contact = () => {
                         rel="noreferrer"
                         className="transition-transform duration-200 hover:scale-125 hover:text-accent"
                         href="mailto:fjulia.dev@gmail.com"
+                        title="email"
                     >
                         <FaMailBulk />
                     </a>
@@ -58,6 +61,7 @@ const Contact = () => {
                         rel="noreferrer"
                         className="transition-transform duration-200 hover:scale-125 hover:text-accent"
                         href="tel:+33612216315"
+                        title="Téléphone"
                     >
                         <FaPhone />
                     </a>
@@ -66,6 +70,7 @@ const Contact = () => {
                         rel="noreferrer"
                         className="transition-transform duration-200 hover:scale-125 hover:text-accent"
                         href="https://wa.me/+33612216315"
+                        title="Whatsapp"
                     >
                         <FaWhatsapp />
                     </a>
