@@ -44,12 +44,12 @@ const Home = () => {
 
             <section
                 id="home"
-                className="section flex flex-col justify-center pt-28 pb-20 items-center md:gap-12 bg-background2"
+                className="section flex flex-col justify-center pt-28 pb-20 items-center  gap-8 md:gap-12 bg-background2"
             >
-                <div className=" flex flex-row justify-center gap-20 items-center text-end font-primary  ">
+                <div className=" flex md:flex-row flex-col justify-center md:gap-20 items-center md:text-end text-center font-primary  ">
                     <div>
                         {' '}
-                        <h1 className="text-3xl sm:text-5xl font-bold leading-[1] uppercase">
+                        <h1 className="text-4xl sm:text-5xl md:text-end text-center font-bold leading-[1] uppercase">
                             Développeuse Web
                             <span className="text-4xl sm:text-6xl text-accent">
                                 {' '}
@@ -93,46 +93,46 @@ const Home = () => {
                     <strong>solutions créatives</strong>, je m'épanouie dans la
                     création d'interfaces utilisateur intuitives et optimisées.
                 </p>
-                <div className="flex flex-row justify-center py-10 items-center gap-12 w-1/2">
+                <div className="flex flex-row flex-wrap justify-center py-4 md:py-10 items-center gap-6 md:gap-12 lg:w-2/3 w-3/4">
                     <img
-                        className="w-1/12 transition-transform duration-200 hover:scale-125"
+                        className="md:w-1/12 w-[10%] transition-transform duration-200 hover:scale-125"
                         src={logoReact}
                         alt="Logo de React"
                         title="React"
                     />
 
                     <img
-                        className="w-1/12 transition-transform duration-200 hover:scale-125"
+                        className="md:w-1/12 w-[10%] transition-transform duration-200 hover:scale-125"
                         src={logoSass}
                         alt="Logo de SASS"
                         title="SASS"
                     />
                     <img
-                        className="w-1/12 transition-transform duration-200 hover:scale-125"
+                        className="md:w-1/12 w-[10%] transition-transform duration-200 hover:scale-125"
                         src={logoTailwind}
                         alt="Logo de Tailwind CSS"
                         title="Tailwind CSS"
                     />
                     <img
-                        className="w-1/12 transition-transform duration-200 hover:scale-125"
+                        className="md:w-1/12 w-[10%] transition-transform duration-200 hover:scale-125"
                         src={logoTypescript}
                         alt="Logo de Typescript"
                         title="Typescript"
                     />
                     <img
-                        className="w-1/12 transition-transform duration-200 hover:scale-125"
+                        className="md:w-1/12 w-[10%] transition-transform duration-200 hover:scale-125"
                         src={logoNodejs}
                         alt="Logo de Node.js"
                         title="Node.js"
                     />
                     <img
-                        className="w-1/12 transition-transform duration-200 hover:scale-125"
+                        className="md:w-1/12 w-[10%] transition-transform duration-200 hover:scale-125"
                         src={logoNextjs}
                         alt="Logo de Next.js"
                         title="Next.js"
                     />
                     <img
-                        className="w-1/12 transition-transform duration-200 hover:scale-125"
+                        className="md:w-1/12 w-[10%] transition-transform duration-200 hover:scale-125"
                         src={logoGit}
                         alt="Logo de Git"
                         title="Git"
