@@ -19,16 +19,16 @@ const Contact = () => {
         >
             <div className="flex-1 flex flex-col justify-center items-center ">
                 <h2 className="h2">Travaillons ensemble !</h2>
-                <h3 className="h3">
+                <h3 className="h3 text-center">
                     Disponible pour rejoindre votre équipe dès Janvier 2025
                 </h3>
             </div>
-            <p className="text-lg">
+            <p className="text-lg text-center">
                 Je suis à votre disposition sur LinkedIn, GitHub, par email ou
                 par téléphone. 💻{' '}
             </p>
             <div className="flex flex-row w-full justify-center items-center">
-                <div className="flex text-4xl gap-10 py-16 justify-center items-center ">
+                <div className="flex text-3xl md:text-4xl gap-10 py-16 justify-center items-center ">
                     <a
                         target="_blank"
                         rel="noreferrer"

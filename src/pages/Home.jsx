@@ -44,7 +44,7 @@ const Home = () => {
 
             <section
                 id="home"
-                className="section flex flex-col justify-center pt-28 pb-20 items-center  gap-8 md:gap-12 bg-background2"
+                className="section flex flex-col justify-center pt-32 md:pt-28 pb-10 md:pb-20 items-center  gap-8 md:gap-12 bg-background2"
             >
                 <div className=" flex md:flex-row flex-col justify-center md:gap-20 items-center md:text-end text-center font-primary  ">
                     <div>

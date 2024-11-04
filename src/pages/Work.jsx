@@ -22,7 +22,7 @@ const Work = () => {
             img: ImgYoga1,
             alt: 'Screen shot du projet Yoga App',
             name: 'Yoga App',
-            tags: ['React', 'Tailwind', 'Node.JS', 'MongoDB'],
+            tags: ['React', 'Tailwind', 'Node.js', 'MongoDB'],
         },
         {
             id: 2,
