@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6'
+import Container from '../components/Container'
 
 const experience = [
     {
@@ -54,6 +55,35 @@ const Path = () => {
                         </div>
                     )
                 })}
+            </div>
+            <h2 className="h2 text-accent text-center m-6 ">
+                Mes diplômes, certifications et formations
+            </h2>
+            <div
+                className="flex flex-col md:flex-row gap-8 py-6 justify-center items-center
+            "
+            >
+                <Container
+                    school="OpenClassrooms"
+                    diploma="Certification développeur web"
+                    year="2024"
+                ></Container>
+                <Container
+                    school="Codelynx"
+                    diploma="Formation BeginReact"
+                    year="2024"
+                ></Container>
+                <Container
+                    school="Atelier des chefs"
+                    diploma="CAP Cuisine"
+                    year="2022"
+                ></Container>
+
+                <Container
+                    school="CMH Academy"
+                    diploma="MBA Management Hôtelier"
+                    year="2018"
+                ></Container>
             </div>
         </section>
     )
