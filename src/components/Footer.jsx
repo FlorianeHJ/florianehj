@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
-        <footer className="absolute  bg-background/80 backdrop-blur-2xl w-full">
+        <footer className="absolute bg-background/80 backdrop-blur-2xl w-full hidden sm:block">
+            {' '}
+            {/* Cacher sur mobile */}
             <p className="text-sm p-2 flex flex-row text-center justify-start gap-2">
                 © 2024 Created with 🩵 by{' '}
                 <span>

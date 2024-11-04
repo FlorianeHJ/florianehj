@@ -60,11 +60,11 @@ const Header = () => {
                     </Link>
                 </div>
                 <div>
-                    <div className="lg:max-w-[1100px] border-b  ">
-                        <p className="hidden sm:flex text-xs md:text-[16px] text-center items-center italic px-5 py-2 h-[60px]  ">
-                            "De cheffe de cuisine à chef de code, je suis passée
-                            des fourneaux aux frameworks, avec toujours la même
-                            passion pour les créations sur mesure !"
+                    <div className="lg:max-w-[1100px] border-b pb-2 ">
+                        <p className="hidden sm:flex text-xs md:text-sm text-center items-center italic px-5 h-14  ">
+                            "En fusionnant ma passion pour la cuisine et le
+                            développement, je crée des solutions sur mesure qui
+                            régalent autant les yeux 🍽 que l'esprit 💻."
                         </p>
                     </div>
                 </div>

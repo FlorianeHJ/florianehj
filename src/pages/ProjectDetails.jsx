@@ -24,18 +24,18 @@ const ProjectDetails = () => {
             <Nav />
             <Header />
             <section className="section flex flex-col justify-center items-start py-28">
-                <div className="flex flex-row justify-around items-center py-10 gap-16">
+                <div className="flex flex-col md:flex-row justify-around items-center py-10 gap-16">
                     <img
-                        className="w-1/2 shadow-xl"
+                        className="md:w-1/2 w-3/4 shadow-xl"
                         src={project.image}
                         alt={project.name}
                     />
                     <div className="flex flex-col items-center text-center justify-center">
-                        <h1 className="uppercase text-5xl font-primary py-6">
+                        <h1 className="uppercase text-5xl font-primary py-1 md:py-6">
                             {project.name}
                         </h1>
                         <p>{project.description}</p>
-                        <div className="flex flex-row gap-16 py-10">
+                        <div className="flex flex-row gap-16 py-2 md:py-10">
                             <a
                                 target="_blank"
                                 rel="noreferrer"
