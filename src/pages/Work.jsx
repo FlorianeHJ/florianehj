@@ -98,7 +98,7 @@ const Work = () => {
     return (
         <section
             id="work"
-            className="section bg-background2 mx-auto flex flex-col gap-6 py-8 justify-center items-center"
+            className="section bg-background2 mx-auto flex flex-col gap-6 py-2 md:py-8 justify-center items-center"
         >
             <h2 className="h2 ">
                 Mes projets <br />

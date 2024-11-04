@@ -67,7 +67,7 @@ const About = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex justify-center items-center py-14">
+                <div className="flex justify-center items-center py-8 md:py-14">
                     <button className="btn">Contactez moi</button>
                 </div>
             </div>
