@@ -82,11 +82,11 @@ const Work = () => {
     // Fonction pour gérer la sélection d'un tag
     const handleTagClick = (tag) => {
         if (tag === 'Tous') {
-            setSelectedTag(null) // Si "Tous" est sélectionné, on désélectionne le tag
+            setSelectedTag(null)
         } else if (selectedTag === tag) {
-            setSelectedTag(null) // Si le tag est déjà sélectionné, on le désélectionne
+            setSelectedTag(null)
         } else {
-            setSelectedTag(tag) // Sinon on sélectionne le nouveau tag
+            setSelectedTag(tag)
         }
     }
 
