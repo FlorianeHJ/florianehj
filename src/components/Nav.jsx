@@ -6,7 +6,7 @@ import BtnNav from './BtnNav'
 const Nav = () => {
     return (
         <nav className="fixed bottom-2 lg:bottom-6 w-full overflow-hidden z-50">
-            <div className="w-[350px] mx-auto px-5 flex justify-between items-center text-2xl text-btnActive border-t border-b border-btnActive backdrop-blur-sm">
+            <div className=" w-[250px] md:w-[350px] mx-auto px-5 flex justify-center md:justify-between items-center text-xl md:text-2xl text-btnActive border-t border-b border-btnActive backdrop-blur-sm">
                 <Link to="/#home" smooth="true">
                     <BtnNav to="home" icon={<BiHomeAlt />} />
                 </Link>

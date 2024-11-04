@@ -24,18 +24,18 @@ const ProjectDetails = () => {
             <Nav />
             <Header />
             <section className="section flex flex-col justify-center items-start py-28">
-                <div className="flex flex-col md:flex-row justify-around items-center py-10 gap-16">
+                <div className="flex flex-col md:flex-row justify-around items-center py-6 md:py-10 gap-8 md:gap-16">
                     <img
-                        className="md:w-1/2 w-3/4 shadow-xl"
+                        className="md:w-1/2 w-11/12 shadow-xl"
                         src={project.image}
                         alt={project.name}
                     />
                     <div className="flex flex-col items-center text-center justify-center">
-                        <h1 className="uppercase text-5xl font-primary py-1 md:py-6">
+                        <h1 className="uppercase text-5xl font-primary py-4 md:py-6">
                             {project.name}
                         </h1>
                         <p>{project.description}</p>
-                        <div className="flex flex-row gap-16 py-2 md:py-10">
+                        <div className="flex flex-row gap-16 py-4 md:py-10">
                             <a
                                 target="_blank"
                                 rel="noreferrer"
@@ -56,11 +56,11 @@ const ProjectDetails = () => {
                     </div>
                 </div>
 
-                <ul className="list-none mt-4">
+                <ul className="list-none mt-2 md:mt-4">
                     {project.aims.map((aim, index) => (
                         <li
                             key={index}
-                            className="flex items-center mb-2 text-base text-gray-300 hover:text-white transition-transform duration-300 hover:scale-105"
+                            className="flex items-center mb-2 text-sm md:text-base text-gray-300 hover:text-white transition-transform duration-300 hover:scale-105"
                         >
                             <BsCheckCircle className="text-btnActive mr-2" />
                             {aim}
@@ -70,7 +70,7 @@ const ProjectDetails = () => {
 
                 {project.techFront && project.techFront.length > 0 && (
                     <>
-                        <h2 className="text-3xl font-primary uppercase border-b py-5">
+                        <h2 className="text-3xl font-primary uppercase border-b py-2 md:py-5">
                             Front-End
                         </h2>
                         <p className="py-3 text-base shadow-sm">
@@ -80,7 +80,7 @@ const ProjectDetails = () => {
                             {project.techFront.map((tech, index) => (
                                 <li
                                     key={index}
-                                    className="flex items-center mb-2 text-base text-gray-300 hover:text-white transition-transform duration-300 hover:scale-105"
+                                    className="flex items-center mb-2 text-sm md:text-base text-gray-300 hover:text-white transition-transform duration-300 hover:scale-105"
                                 >
                                     <BsCheckCircle className="text-btnActive mr-2" />
                                     {tech}
@@ -96,10 +96,10 @@ const ProjectDetails = () => {
                         {project.back.aimsBack &&
                             project.back.aimsBack.length > 0 && (
                                 <div>
-                                    <h2 className="text-3xl font-primary uppercase border-b py-5">
+                                    <h2 className="text-3xl font-primary uppercase border-b py-2 md:py-5">
                                         Back-End
                                     </h2>
-                                    <p className="py-3 text-base shadow-sm">
+                                    <p className="py-4 text-base shadow-sm">
                                         Les spécificités du backend :
                                     </p>
                                     <ul className="list-none mt-4">
@@ -107,7 +107,7 @@ const ProjectDetails = () => {
                                             (aim, index) => (
                                                 <li
                                                     key={index}
-                                                    className="flex items-center mb-2 text-base text-gray-300 hover:text-white transition-transform duration-300 hover:scale-105"
+                                                    className="flex items-center mb-2 text-sm md:text-base text-gray-300 hover:text-white transition-transform duration-300 hover:scale-105"
                                                 >
                                                     <BsCheckCircle className="text-btnActive mr-2" />
                                                     {aim}
@@ -129,7 +129,7 @@ const ProjectDetails = () => {
                                             (tech, index) => (
                                                 <li
                                                     key={index}
-                                                    className="flex items-center  mb-2 text-base text-gray-300 hover:text-white transition-transform duration-300 hover:scale-105"
+                                                    className="flex items-center  mb-2 text-sm md:text-base text-gray-300 hover:text-white transition-transform duration-300 hover:scale-105"
                                                 >
                                                     <BsCheckCircle className="text-btnActive mr-2" />
                                                     {tech}
