@@ -15,8 +15,8 @@ const experience = [
         description: `En tant que Responsable Relation Clientèle et Qualité, je gérais les demandes spéciales des clients, y compris celles des VIP, tout en étant responsable de la satisfaction globale et de la qualité des services. J'assurais une gestion proactive des retours clients, en ligne et sur place, pour garantir que chaque expérience soit à la hauteur des attentes.`,
     },
     {
-        name: 'Réceptionniste - Hyatt Chicago',
-        description: `Lors de mon expérience en tant que réceptionniste à Chicago, j'ai eu l'opportunité de travailler dans un environnement international, en étant bilingue anglais-français. Mon rôle consistait à accueillir et à assister une clientèle diversifiée, tout en répondant à leurs besoins spécifiques. La gestion de réservations, la coordination avec les différents services de l'hôtel, et l'attention portée aux détails étaient essentiels pour assurer un service fluide et de qualité.`,
+        name: 'Réceptionniste VIP - Hyatt Régency Chicago',
+        description: `Lors de mon expérience en tant que réceptionniste VIP à Chicago, j'ai eu l'opportunité de travailler dans un environnement international, en étant bilingue anglais-français. Mon rôle consistait à accueillir et à assister une clientèle diversifiée et VIP, tout en répondant à leurs besoins spécifiques, avec un accueil sur-mesure et de qualité. `,
     },
 ]
 
@@ -33,11 +33,11 @@ const Path = () => {
                             key={index}
                         >
                             <div className="max-w-3xl">
-                                <h4 className="text-2xl tracking-wider font-primary font-semibold pb-4">
+                                <h4 className="md:text-left text-center md:text-2xl text-xl tracking-wider font-primary font-semibold pb-4">
                                     {name}
                                 </h4>
 
-                                <p className="font-secondary leading-tight text-base">
+                                <p className="font-secondary md:text-left text-center leading-tight text-sm md:text-base">
                                     {description}
                                 </p>
                             </div>
