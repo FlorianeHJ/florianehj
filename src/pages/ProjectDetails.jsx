@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BsCheckCircle } from 'react-icons/bs'
 import { useParams } from 'react-router-dom'
 import Footer from '../components/Footer'
@@ -9,6 +9,11 @@ import projectsData from '../data/projects'
 const ProjectDetails = () => {
     const { projectId } = useParams()
     const project = projectsData.find((p) => p.id === parseInt(projectId))
+
+    // Effet pour faire défiler vers le haut lorsque le composant est monté
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     if (!project) {
         return <div>Projet non trouvé</div>
