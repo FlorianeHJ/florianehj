@@ -98,36 +98,44 @@ const Home = () => {
                         className="w-1/12 transition-transform duration-200 hover:scale-125"
                         src={logoReact}
                         alt="Logo de React"
+                        title="React"
                     />
+
                     <img
                         className="w-1/12 transition-transform duration-200 hover:scale-125"
                         src={logoSass}
                         alt="Logo de SASS"
+                        title="SASS"
                     />
                     <img
                         className="w-1/12 transition-transform duration-200 hover:scale-125"
                         src={logoTailwind}
                         alt="Logo de Tailwind CSS"
+                        title="Tailwind CSS"
                     />
                     <img
                         className="w-1/12 transition-transform duration-200 hover:scale-125"
                         src={logoTypescript}
                         alt="Logo de Typescript"
+                        title="Typescript"
                     />
                     <img
                         className="w-1/12 transition-transform duration-200 hover:scale-125"
                         src={logoNodejs}
                         alt="Logo de Node.js"
+                        title="Node.js"
                     />
                     <img
                         className="w-1/12 transition-transform duration-200 hover:scale-125"
                         src={logoNextjs}
                         alt="Logo de Next.js"
+                        title="Next.js"
                     />
                     <img
                         className="w-1/12 transition-transform duration-200 hover:scale-125"
                         src={logoGit}
                         alt="Logo de Git"
+                        title="Git"
                     />
                 </div>
                 <div className="flex max-w-max gap-x-6 items-center">

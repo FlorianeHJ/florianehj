@@ -12,11 +12,11 @@ module.exports = {
             },
         },
         screens: {
-            sm: '640px', // Petit écran, généralement pour les téléphones
-            md: '768px', // Écran moyen, tablettes
-            lg: '1024px', // Grand écran, ordinateurs portables
-            xl: '1280px', // Très grand écran, ordinateurs de bureau
-            '2xl': '1536px', // Écrans très larges
+            sm: '640px',
+            md: '768px',
+            lg: '1024px',
+            xl: '1280px',
+            '2xl': '1536px',
         },
         colors: {
             background1: '#FFFFFF',
