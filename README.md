@@ -6,6 +6,7 @@
 
 💻 Parmi mes projets récents, vous y trouverez :
 
+-   **Evently**  : PROJET EN COURS - Une application de gestion évènementiel pour particulier.
 -   **Yoga App** : Une application dédiée à la pratique du yoga, offrant des séances et des conseils personnalisés, avec un timer.
 -   **Ciné App** : Une application de cinéma avec des options comme les favoris.
 
