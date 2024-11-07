@@ -1,5 +1,6 @@
 // src/data/projects.js
 import ImgCW1 from '../assets/crypto-tower/1.png'
+import ImgEvently1 from '../assets/evently/1.png'
 import ImgKasa1 from '../assets/kasa/1.png'
 import ImgGrimoire1 from '../assets/mon-vieux-grimoire/1.png'
 import ImgMovie1 from '../assets/movie-app/1.png'
@@ -10,6 +11,29 @@ import ImgYoga1 from '../assets/Yoga Timer/1.png'
 const projects = [
     {
         id: 1,
+        name: 'Evently - Projet en cours',
+        image: ImgEvently1,
+        link1: 'https://github.com/FlorianeHJ/Evently',
+        link3: '/CDC_evently.pdf',
+        description: `Evently est une application qui facilite l'organisation d’événements en permettant aux utilisateurs de gérer leur budget et de planifier leurs activités.`,
+        aims: [
+            `Tableau de bord : Accédez à l'ensemble des fonctionnalités à jour en un coups d'oeil, comme la liste de vos invités ou votre playlist Spotify préférée`,
+            'Suivi du budget : Ajustez votre budget pour chaque événement et recevez des alertes si vous dépassez vos limites.',
+            `To do : Organisez votre évènement grâce à des to do personnaliés et personnels`,
+            'Calendrier : Gérez votre calendrier et synchronisez le avec votre boîte mail préféré ',
+        ],
+        techFront: ['Typescript', 'Tailwind CSS', 'React Icons'],
+        back: {
+            aimsBack: [
+                `Authentification: Les utilisateurs peuvent s'inscrire et se connecter à l'aide de JSON Web Token (JWT).`,
+                `Gestion des favoris: Les utilisateurs authentifiés peuvent ajouter des positions de yoga à leurs favoris, qui sont stockées dans MongoDB.`,
+                `Sécurité: Le backend utilise 'helmet' et 'express-rate-limit' pour protéger contre les attaques courantes.`,
+            ],
+            techBack: ['Next.js', 'Firebase', 'JWT', 'bcrypt', 'dotenv'],
+        },
+    },
+    {
+        id: 2,
         name: 'Yoga Timer',
         image: ImgYoga1,
         link1: 'https://github.com/FlorianeHJ/Yoga-App.git',
@@ -45,22 +69,6 @@ const projects = [
         },
     },
     {
-        id: 2,
-        name: 'Movie App',
-        image: ImgMovie1,
-        link1: 'https://github.com/FlorianeHJ/Movie-App.git',
-
-        description: `Movie-App est une application web permettant de consulter un large catalogue de films. Les utilisateurs peuvent naviguer dans les films, les filtrer selon plusieurs critères, et ajouter des films à leurs favoris ou coups de cœur.`,
-        aims: [
-            `Affichage de 20 films à la fois, avec un système de pagination dynamique.`,
-            `Filtrage des films selon différents critères (genre, année, popularité, etc.)`,
-            `Possibilité de marquer des films comme coups de cœur.`,
-            `Navigation facile grâce à react-router-dom.`,
-        ],
-        techFront: ['React', 'Axios', 'React Router', 'SASS'],
-        back: null,
-    },
-    {
         id: 3,
         name: 'Crypto Watch',
         image: ImgCW1,
@@ -82,8 +90,26 @@ const projects = [
         ],
         back: null,
     },
+
     {
         id: 4,
+        name: 'Movie App',
+        image: ImgMovie1,
+        link1: 'https://github.com/FlorianeHJ/Movie-App.git',
+
+        description: `Movie-App est une application web permettant de consulter un large catalogue de films. Les utilisateurs peuvent naviguer dans les films, les filtrer selon plusieurs critères, et ajouter des films à leurs favoris ou coups de cœur.`,
+        aims: [
+            `Affichage de 20 films à la fois, avec un système de pagination dynamique.`,
+            `Filtrage des films selon différents critères (genre, année, popularité, etc.)`,
+            `Possibilité de marquer des films comme coups de cœur.`,
+            `Navigation facile grâce à react-router-dom.`,
+        ],
+        techFront: ['React', 'Axios', 'React Router', 'SASS'],
+        back: null,
+    },
+
+    {
+        id: 5,
         name: 'Kasa',
         image: ImgKasa1,
         link1: 'https://github.com/FlorianeHJ/OC---kasa.git',
@@ -98,7 +124,7 @@ const projects = [
         back: null,
     },
     {
-        id: 5,
+        id: 6,
         name: 'Nina Carducci',
         image: ImgNC1,
         link1: 'https://github.com/FlorianeHJ/OC---Nina-Carducci',
@@ -114,7 +140,7 @@ const projects = [
         back: null,
     },
     {
-        id: 6,
+        id: 7,
         name: 'Mon vieux Grimoire',
         image: ImgGrimoire1,
         link1: 'https://github.com/FlorianeHJ/OC---Grimoire',
@@ -175,7 +201,7 @@ const projects = [
         },
     },
     {
-        id: 7,
+        id: 8,
         name: 'Portfolio - Sophie Bluel',
         image: ImgSB1,
         link1: 'https://github.com/FlorianeHJ/OC---Sophie-Bluel.git',

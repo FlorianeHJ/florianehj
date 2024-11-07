@@ -52,6 +52,17 @@ const ProjectDetails = () => {
                                     <button className="btn">En ligne</button>
                                 </a>
                             )}
+                            {project.link3 && (
+                                <a
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    href={project.link3}
+                                >
+                                    <button className="btn">
+                                        Cahier des charges
+                                    </button>
+                                </a>
+                            )}
                         </div>
                     </div>
                 </div>

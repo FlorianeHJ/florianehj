@@ -44,11 +44,12 @@ const About = () => {
                             C’est là que la magie a opéré : j’ai re-découvert le
                             code, et je me suis dit : il est temps d'en faire
                             ton métier ! C’est un peu comme la cuisine : il faut
-                            de la précision, de la créativité (avec un souspon
+                            de la précision, de la créativité (avec un soupçon
                             de patience), et un bon mélange d’ingrédients pour
                             réussir ! Aujourd'hui, après de{' '}
                             <strong>nombreux projets réussis </strong> et une
                             <strong>
+                                {' '}
                                 certification de développement web
                             </strong>{' '}
                             en poche, je suis maintenant{' '}

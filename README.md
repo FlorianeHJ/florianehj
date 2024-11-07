@@ -2,7 +2,7 @@
 
 🌟 Je suis **Floriane**, une passionnée de développement web front-end, spécialisée en **React** et **Tailwind CSS**. Mon portfolio est créé avec amour, simplicité et surtout avec React; et est le reflet de mon engagement à fournir des solutions efficaces et esthétiques.
 
-🔍 Je suis actuellement à la recherche d'un poste en tant que **développeuse front-end React**. Je suis motivée, sérieuse et déterminée à apprendre et à évoluer dans ce domaine dynamique.
+🔍 Je suis actuellement à la recherche d'un poste en tant que **développeuse React**. Je suis motivée, sérieuse et déterminée à apprendre et à évoluer dans ce domaine dynamique.
 
 💻 Parmi mes projets récents, vous y trouverez :
 
