@@ -23,7 +23,7 @@ const Work = () => {
             img: ImgEvently1,
             alt: 'Screen du projet en cours',
             name: 'Evently - en cours',
-            tags: ['Next.js', 'Tailwind', 'Firebase'],
+            tags: ['Node.js', 'Express.js', 'Tailwind', 'Firebase'],
         },
         {
             id: 2,

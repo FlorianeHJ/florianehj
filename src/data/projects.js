@@ -22,14 +22,19 @@ const projects = [
             `To do : Organisez votre évènement grâce à des to do personnaliés et personnels`,
             'Calendrier : Gérez votre calendrier et synchronisez le avec votre boîte mail préféré ',
         ],
-        techFront: ['Typescript', 'Tailwind CSS', 'React Icons'],
+        techFront: ['React', 'Typescript', 'Tailwind CSS'],
         back: {
             aimsBack: [
-                `Authentification: Les utilisateurs peuvent s'inscrire et se connecter à l'aide de JSON Web Token (JWT).`,
-                `Gestion des favoris: Les utilisateurs authentifiés peuvent ajouter des positions de yoga à leurs favoris, qui sont stockées dans MongoDB.`,
+                `Authentification: Les utilisateurs peuvent s'inscrire et se connecter avec Firebase Auth.`,
+                `Stockage : L'ensemble des données sont stockés et mis à jour en temps réel avec Firebase Storage`,
                 `Sécurité: Le backend utilise 'helmet' et 'express-rate-limit' pour protéger contre les attaques courantes.`,
             ],
-            techBack: ['Next.js', 'Firebase', 'JWT', 'bcrypt', 'dotenv'],
+            techBack: [
+                'Node.js',
+                'Express',
+                'Firebase Auth',
+                'Firebase Storage',
+            ],
         },
     },
     {
