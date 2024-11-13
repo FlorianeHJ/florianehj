@@ -10,7 +10,6 @@ const ProjectDetails = () => {
     const { projectId } = useParams()
     const project = projectsData.find((p) => p.id === parseInt(projectId))
 
-    // Effet pour faire défiler vers le haut lorsque le composant est monté
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])

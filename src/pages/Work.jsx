@@ -12,9 +12,9 @@ import Card from '../components/Card'
 import Tag from '../components/Tag'
 
 const Work = () => {
-    const [visibleCount, setVisibleCount] = useState(3) // Commence par afficher 3 projets
-    const [isExpanded, setIsExpanded] = useState(false) // État pour gérer l'affichage étendu
-    const [selectedTag, setSelectedTag] = useState(null) // État pour le tag sélectionné
+    const [visibleCount, setVisibleCount] = useState(3)
+    const [isExpanded, setIsExpanded] = useState(false)
+    const [selectedTag, setSelectedTag] = useState(null)
 
     // Les projets à afficher
     const projects = [
@@ -82,13 +82,11 @@ const Work = () => {
         },
     ]
 
-    // Extraire une liste unique de tous les tags + ajout du tag "Tous"
     const allTags = [
         'Tous',
         ...new Set(projects.flatMap((project) => project.tags)),
     ]
 
-    // Fonction pour gérer la sélection d'un tag
     const handleTagClick = (tag) => {
         if (tag === 'Tous') {
             setSelectedTag(null)
@@ -99,7 +97,6 @@ const Work = () => {
         }
     }
 
-    // Filtrer les projets par tag sélectionné
     const filteredProjects = selectedTag
         ? projects.filter((project) => project.tags.includes(selectedTag))
         : projects
@@ -153,8 +150,8 @@ const Work = () => {
                     <button
                         className="btn"
                         onClick={() => {
-                            setVisibleCount(3) // Réinitialise pour afficher uniquement les 3 premiers projets
-                            setIsExpanded(false) // Remet l'état à non élargi
+                            setVisibleCount(3)
+                            setIsExpanded(false)
                         }}
                     >
                         Afficher moins
@@ -166,8 +163,8 @@ const Work = () => {
                     <button
                         className="btn"
                         onClick={() => {
-                            setVisibleCount(projects.length) // Augmente le nombre de projets visibles
-                            setIsExpanded(true) // Change l'état à élargi
+                            setVisibleCount(projects.length)
+                            setIsExpanded(true)
                         }}
                     >
                         Afficher plus

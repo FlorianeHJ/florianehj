@@ -3,7 +3,6 @@ import React from 'react'
 const About = () => {
     return (
         <section id="about" className="section bg-background1 mx-auto py-8">
-            {/* {Partie blabla} */}
             <div>
                 <h2 className="h2 text-accent text-center">
                     Le discours d'une dev

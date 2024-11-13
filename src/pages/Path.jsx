@@ -16,7 +16,7 @@ const experience = [
         description: `En tant que Responsable Relation Clientèle et Qualité, je gérais les demandes spéciales des clients, y compris celles des VIP, tout en étant responsable de la satisfaction globale et de la qualité des services. J'assurais une gestion proactive des retours clients, en ligne et sur place, pour garantir que chaque expérience soit à la hauteur des attentes.`,
     },
     {
-        name: 'Réceptionniste VIP - Hyatt Régency Chicago',
+        name: 'Réceptionniste VIP - Hyatt Regency Chicago',
         description: `Lors de mon expérience en tant que réceptionniste VIP à Chicago, j'ai eu l'opportunité de travailler dans un environnement international, en étant bilingue anglais-français. Mon rôle consistait à accueillir et à assister une clientèle diversifiée et VIP, tout en répondant à leurs besoins spécifiques, avec un accueil sur-mesure et de qualité. `,
     },
 ]

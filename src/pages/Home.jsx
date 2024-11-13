@@ -19,19 +19,18 @@ import Path from './Path'
 import Work from './Work'
 
 const Home = () => {
-    const location = useLocation() // Utiliser useLocation pour obtenir l'URL
+    const location = useLocation()
 
-    // useEffect pour gérer le scroll vers les sections à partir du hash
     useEffect(() => {
         if (location.hash) {
-            const sectionId = location.hash.substring(1) // Retire le "#" du hash pour obtenir l'ID
+            const sectionId = location.hash.substring(1)
             const section = document.getElementById(sectionId)
 
             if (section) {
                 section.scrollIntoView({ behavior: 'smooth' })
             }
         }
-    }, [location]) // Réagir à chaque changement d'URL
+    }, [location])
 
     const handleOpenPDF = () => {
         window.open('/cv_floriane_hurtebize_2024.pdf', '_blank')
