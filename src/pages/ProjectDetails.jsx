@@ -23,8 +23,8 @@ const ProjectDetails = () => {
         <div>
             <Nav />
             <Header />
-            <section className="section flex flex-col justify-center items-start py-28">
-                <div className="flex flex-col md:flex-row justify-around items-center py-6 md:py-10 gap-8 md:gap-16">
+            <section className="section flex flex-col justify-center  items-start py-28">
+                <div className="flex  flex-col md:flex-row justify-around items-center py-6 md:py-10 gap-8 md:gap-16">
                     <img
                         className="md:w-1/2 w-11/12 shadow-xl"
                         src={project.image}
@@ -80,10 +80,11 @@ const ProjectDetails = () => {
                 </ul>
 
                 {project.techFront && project.techFront.length > 0 && (
-                    <>
-                        <h2 className="text-3xl font-primary uppercase border-b py-2 md:py-5">
+                    <div className="w-full">
+                        <h2 className="text-3xl font-primary uppercase border-b w-full py-2 md:py-5">
                             Front-End
                         </h2>
+
                         <p className="py-3 text-base shadow-sm">
                             Les outils utilisés :
                         </p>
@@ -98,18 +99,20 @@ const ProjectDetails = () => {
                                 </li>
                             ))}
                         </ul>
-                    </>
+                    </div>
                 )}
 
                 {/* Vérification de l'existence de back */}
                 {project.back && (
-                    <>
+                    <div className="w-full">
                         {project.back.aimsBack &&
                             project.back.aimsBack.length > 0 && (
                                 <div>
-                                    <h2 className="text-3xl font-primary uppercase border-b py-2 md:py-5">
-                                        Back-End
-                                    </h2>
+                                    <div className="w-full border-b">
+                                        <h2 className="text-3xl font-primary uppercase  py-2 md:py-5">
+                                            Back-End
+                                        </h2>
+                                    </div>
                                     <p className="py-4 text-base shadow-sm">
                                         Les spécificités du backend :
                                     </p>
@@ -150,7 +153,7 @@ const ProjectDetails = () => {
                                     </ul>
                                 </div>
                             )}
-                    </>
+                    </div>
                 )}
             </section>
             <Footer />
